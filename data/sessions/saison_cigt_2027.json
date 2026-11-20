@@ -1,0 +1,78 @@
+{
+  "series": "cigt",
+  "source": "https://www.lautomobile.aci.it/?p=47910",
+  "weekends": [
+    {
+      "event": "Vallelunga",
+      "region": "Sprint",
+      "location": "Vallelunga, Italien",
+      "from": "2027-04-23",
+      "to": "2027-04-25",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Misano",
+      "region": "Endurance",
+      "location": "Misano, Italien",
+      "from": "2027-05-07",
+      "to": "2027-05-09",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Imola",
+      "region": "Sprint",
+      "location": "Imola, Italien",
+      "from": "2027-05-28",
+      "to": "2027-05-30",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Mugello",
+      "region": "Endurance",
+      "location": "Mugello, Italien",
+      "from": "2027-07-23",
+      "to": "2027-07-25",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Misano",
+      "region": "Sprint",
+      "location": "Misano, Italien",
+      "from": "2027-08-06",
+      "to": "2027-08-08",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Imola",
+      "region": "Endurance",
+      "location": "Imola, Italien",
+      "from": "2027-09-10",
+      "to": "2027-09-12",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Monza",
+      "region": "Sprint",
+      "location": "Monza, Italien",
+      "from": "2027-09-24",
+      "to": "2027-09-26",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Monza",
+      "region": "Endurance",
+      "location": "Monza, Italien",
+      "from": "2027-10-15",
+      "to": "2027-10-17",
+      "note": "ACI Racing Weekend"
+    },
+    {
+      "event": "Mugello",
+      "region": "Sprint",
+      "location": "Mugello, Italien",
+      "from": "2027-10-29",
+      "to": "2027-10-31",
+      "note": "ACI Racing Weekend"
+    }
+  ]
+}

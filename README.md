@@ -1,12 +1,12 @@
 # 🏁 Motorsport-Kalender
 
-Abonnierbarer Kalender für 21 Rennserien, mit Zeiten in deutscher Zeit und der
+Abonnierbarer Kalender für 22 Rennserien, mit Zeiten in deutscher Zeit und der
 deutschen TV-Übertragung in jedem Termin.
 
 **Serien:** Formel 1, Porsche Supercup, WEC, IMSA, Formel E, Rallye-WM, W2RC, Dakar,
 DTM, ADAC GT Masters, Porsche Carrera Cup Deutschland, GT World Challenge, IGTC,
 weitere SRO-GT3-Serien, Asian Le Mans Series, Super GT, Supercars, 24H Series,
-NLS, 24h Nürburgring, GT Open.
+NLS, 24h Nürburgring, GT Open, Campionato Italiano GT.
 
 ## So funktioniert es
 

@@ -452,6 +452,29 @@
           "url": "https://www.youtube.com/@GTOPENseries"
         }
       ]
+    },
+    {
+      "id": "cigt",
+      "name": "Campionato Italiano GT (Sprint & Endurance)",
+      "kurz": "CIGT",
+      "mt": [],
+      "tv": "ACI Sport TV (YouTube, italienischer Kommentar) – deutsche Übertragung wird je Event recherchiert",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "https://www.youtube.com/@ACISportTVofficial",
+      "quellen": [
+        "https://acisport.it/en/cigt/calendar-and-results/2026",
+        "https://www.lautomobile.aci.it/?p=47910"
+      ],
+      "links": [
+        {
+          "name": "ACI Sport TV (YouTube)",
+          "url": "https://www.youtube.com/@ACISportTVofficial"
+        }
+      ],
+      "regionen": [
+        "Sprint",
+        "Endurance"
+      ]
     }
   ]
 }
