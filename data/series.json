@@ -147,7 +147,17 @@
         "https://www.worldrallyraidchampionship.com/en/"
       ],
       "youtube": "https://www.youtube.com/c/WorldRally-RaidChampionship",
-      "links": []
+      "links": [
+        {
+          "name": "discovery+ (Eurosport)",
+          "url": "https://www.discoveryplus.com/de",
+          "sprache": "de"
+        },
+        {
+          "name": "W2RC (YouTube)",
+          "url": "https://www.youtube.com/c/WorldRally-RaidChampionship"
+        }
+      ]
     },
     {
       "id": "dakar",
@@ -195,7 +205,28 @@
       "tv": "Alle Rennen live bei Joyn, SPORT1.de, ServusTV On und YouTube (ADAC Motorsports); Sonntagsrennen meist live bei SPORT1 (Free-TV); Qualifying nur YouTube",
       "tv_stand": "2026-11",
       "youtube": "https://youtube.com/ADACMotorsports",
-      "links": []
+      "links": [
+        {
+          "name": "Joyn",
+          "url": "https://www.joyn.de",
+          "sprache": "de"
+        },
+        {
+          "name": "SPORT1 (Free-TV/Stream)",
+          "url": "https://www.sport1.de/",
+          "sprache": "de"
+        },
+        {
+          "name": "ServusTV On",
+          "url": "https://www.servustv.com/",
+          "sprache": "de"
+        },
+        {
+          "name": "ADAC Motorsports (YouTube)",
+          "url": "https://youtube.com/ADACMotorsports",
+          "sprache": "de"
+        }
+      ]
     },
     {
       "id": "pccd",
@@ -241,7 +272,12 @@
         "Asia",
         "Australia"
       ],
-      "links": []
+      "links": [
+        {
+          "name": "GT World (YouTube)",
+          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+        }
+      ]
     },
     {
       "id": "igtc",
@@ -258,7 +294,12 @@
         "https://www.intercontinentalgtchallenge.com/calendar"
       ],
       "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
-      "links": []
+      "links": [
+        {
+          "name": "GT World (YouTube)",
+          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+        }
+      ]
     },
     {
       "id": "sro",
@@ -268,7 +309,12 @@
       "tv": "wird je Event recherchiert",
       "tv_stand": "ungeprüft",
       "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
-      "links": []
+      "links": [
+        {
+          "name": "GT World (YouTube)",
+          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+        }
+      ]
     },
     {
       "id": "alms",
@@ -284,7 +330,12 @@
         "https://www.asianlemansseries.com"
       ],
       "youtube": "https://www.youtube.com/c/AsianLeMansSeries",
-      "links": []
+      "links": [
+        {
+          "name": "Asian Le Mans Series (YouTube)",
+          "url": "https://www.youtube.com/c/AsianLeMansSeries"
+        }
+      ]
     },
     {
       "id": "supergt",
@@ -296,7 +347,12 @@
       "tv": "wird je Event recherchiert",
       "tv_stand": "ungeprüft",
       "youtube": "https://www.youtube.com/user/supergtmovie",
-      "links": []
+      "links": [
+        {
+          "name": "SUPER GT (YouTube)",
+          "url": "https://www.youtube.com/user/supergtmovie"
+        }
+      ]
     },
     {
       "id": "supercars",
@@ -305,10 +361,23 @@
       "mt": [
         "Supercars"
       ],
-      "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig); kein deutscher TV-Sender bekannt",
+      "tv": "SportDigital (Partner für Deutschland/Österreich/Schweiz laut supercars.com); international SuperView (offizieller Stream, kostenpflichtig)",
       "tv_stand": "2026-11",
-      "youtube": "https://www.youtube.com/@SupercarsChampionship",
-      "links": []
+      "youtube": "",
+      "links": [
+        {
+          "name": "SportDigital",
+          "url": "https://start.sportdigital.de/",
+          "sprache": "de"
+        },
+        {
+          "name": "SuperView (kostenpflichtig)",
+          "url": "https://www.supercars.com/superview"
+        }
+      ],
+      "quellen": [
+        "https://www.supercars.com/watch-supercars-international"
+      ]
     },
     {
       "id": "24hseries",
@@ -323,7 +392,12 @@
         "https://www.24hseries.com"
       ],
       "youtube": "https://www.youtube.com/user/24HSeries",
-      "links": []
+      "links": [
+        {
+          "name": "24H Series (YouTube)",
+          "url": "https://www.youtube.com/user/24HSeries"
+        }
+      ]
     },
     {
       "id": "nls",
@@ -336,7 +410,12 @@
       "tv": "Livestream (offizieller NLS-YouTube-Kanal)",
       "tv_stand": "2026-11",
       "youtube": "https://www.youtube.com/c/VLNOFFICIAL",
-      "links": []
+      "links": [
+        {
+          "name": "NLS (YouTube)",
+          "url": "https://www.youtube.com/c/VLNOFFICIAL"
+        }
+      ]
     },
     {
       "id": "24hn",
@@ -367,7 +446,12 @@
         "https://gtopen.gtsport.es"
       ],
       "youtube": "https://www.youtube.com/@GTOPENseries",
-      "links": []
+      "links": [
+        {
+          "name": "GT Open (YouTube)",
+          "url": "https://www.youtube.com/@GTOPENseries"
+        }
+      ]
     }
   ]
 }

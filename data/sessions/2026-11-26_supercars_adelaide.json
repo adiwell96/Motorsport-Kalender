@@ -3,18 +3,70 @@
   "event": "Adelaide Grand Final",
   "location": "Adelaide Street Circuit, South Australia, Australien",
   "timezone": "Australia/Adelaide",
-  "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig)",
-  "source": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-track-schedule-revealed-times-racing-super2-series-finals-supports",
+  "tv": "SportDigital (DACH-Partner); international SuperView (kostenpflichtig)",
+  "source": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-track-schedule-revealed-times-racing-super2-series-finals-supports ; Übertragung: https://www.supercars.com/watch-supercars-international",
   "sessions": [
-    {"name": "1. Training", "start": "2026-11-26T15:15", "end": "2026-11-26T15:40"},
-    {"name": "2. Training", "start": "2026-11-27T10:00", "end": "2026-11-27T10:25"},
-    {"name": "Qualifying Rennen 35 (Teil 1+2)", "start": "2026-11-27T13:10", "end": "2026-11-27T13:38"},
-    {"name": "Rennen 35 (100 km)", "start": "2026-11-27T16:20", "end": "2026-11-27T17:20"},
-    {"name": "Qualifying Rennen 36 (Teil 1+2)", "start": "2026-11-28T11:45", "end": "2026-11-28T12:17"},
-    {"name": "Top-10-Shootout Rennen 36", "start": "2026-11-28T12:35", "end": "2026-11-28T13:10"},
-    {"name": "Rennen 36 (250 km)", "start": "2026-11-28T15:20", "end": "2026-11-28T17:25"},
-    {"name": "Qualifying Rennen 37 (Teil 1+2)", "start": "2026-11-29T11:45", "end": "2026-11-29T12:17"},
-    {"name": "Top-10-Shootout Rennen 37", "start": "2026-11-29T12:35", "end": "2026-11-29T13:10"},
-    {"name": "Rennen 37 (250 km)", "start": "2026-11-29T15:15", "end": "2026-11-29T17:20", "note": "Saisonfinale"}
+    {
+      "name": "1. Training",
+      "start": "2026-11-26T15:15",
+      "end": "2026-11-26T15:40"
+    },
+    {
+      "name": "2. Training",
+      "start": "2026-11-27T10:00",
+      "end": "2026-11-27T10:25"
+    },
+    {
+      "name": "Qualifying Rennen 35 (Teil 1+2)",
+      "start": "2026-11-27T13:10",
+      "end": "2026-11-27T13:38"
+    },
+    {
+      "name": "Rennen 35 (100 km)",
+      "start": "2026-11-27T16:20",
+      "end": "2026-11-27T17:20"
+    },
+    {
+      "name": "Qualifying Rennen 36 (Teil 1+2)",
+      "start": "2026-11-28T11:45",
+      "end": "2026-11-28T12:17"
+    },
+    {
+      "name": "Top-10-Shootout Rennen 36",
+      "start": "2026-11-28T12:35",
+      "end": "2026-11-28T13:10"
+    },
+    {
+      "name": "Rennen 36 (250 km)",
+      "start": "2026-11-28T15:20",
+      "end": "2026-11-28T17:25"
+    },
+    {
+      "name": "Qualifying Rennen 37 (Teil 1+2)",
+      "start": "2026-11-29T11:45",
+      "end": "2026-11-29T12:17"
+    },
+    {
+      "name": "Top-10-Shootout Rennen 37",
+      "start": "2026-11-29T12:35",
+      "end": "2026-11-29T13:10"
+    },
+    {
+      "name": "Rennen 37 (250 km)",
+      "start": "2026-11-29T15:15",
+      "end": "2026-11-29T17:20",
+      "note": "Saisonfinale"
+    }
+  ],
+  "links": [
+    {
+      "name": "SportDigital",
+      "url": "https://start.sportdigital.de/",
+      "sprache": "de"
+    },
+    {
+      "name": "SuperView (kostenpflichtig)",
+      "url": "https://www.supercars.com/superview"
+    }
   ]
 }
