@@ -50,6 +50,10 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
 
 ## Regeln
 
+- **GT World Challenge:** Setze in jeder `gtwc`-Datei das Feld `"region"` auf
+  `Europe`, `America`, `Asia` oder `Australia` (bei Saison-Dateien pro Wochenende).
+  Der Eventname enthält dann nur noch die Strecke, z. B. `"event": "Suzuka"`.
+
 - **Deutsche Übertragung hat Vorrang.** Bevorzuge deutsche Sender und Streams mit
   deutschem Kommentar (z. B. F1: Sky / WOW, WEC: discovery+, IMSA: Motorvision TV).
   YouTube oder englische Streams nur, wenn es keine deutsche Übertragung gibt,

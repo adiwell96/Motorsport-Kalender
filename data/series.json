@@ -1,5 +1,5 @@
 {
-  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt. 'youtube' = offizieller YouTube-Kanal (leer = keiner bekannt/kein Livestream in DE). 'stream_de' = deutscher Stream/Sender-Link, hat Vorrang vor YouTube.",
+  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt. 'youtube' = offizieller YouTube-Kanal (leer = keiner bekannt/kein Livestream in DE). 'stream_de' = deutscher Stream/Sender-Link, hat Vorrang vor YouTube. 'regionen' = Unterkalender je Region (Feld 'region' in Session-/Saison-Dateien).",
   "series": [
     {
       "id": "f1",
@@ -150,7 +150,7 @@
     },
     {
       "id": "gtwc",
-      "name": "GT World Challenge",
+      "name": "GT World Challenge (Europe, America, Asia, Australia)",
       "kurz": "GTWC",
       "mt": [
         "GT World Challenge",
@@ -162,7 +162,13 @@
         "https://www.gt-world-challenge.com/calendar"
       ],
       "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
-      "stream_de": ""
+      "stream_de": "",
+      "regionen": [
+        "Europe",
+        "America",
+        "Asia",
+        "Australia"
+      ]
     },
     {
       "id": "igtc",

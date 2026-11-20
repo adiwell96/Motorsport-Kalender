@@ -1,6 +1,6 @@
 {
   "series": "gtwc",
-  "event": "GTWC Australia Adelaide",
+  "event": "Adelaide",
   "location": "Adelaide Street Circuit, Australien",
   "timezone": "Australia/Adelaide",
   "tv": "GT World YouTube (Livestream Sa/So, außerhalb Australiens kostenlos)",
@@ -41,5 +41,6 @@
       "end": "2026-11-29T10:40",
       "note": "Saisonfinale"
     }
-  ]
+  ],
+  "region": "Australia"
 }

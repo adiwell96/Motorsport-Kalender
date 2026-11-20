@@ -4,130 +4,148 @@
   "_info": "GTWC Europe kommt automatisch über Motorsport-Total.",
   "weekends": [
     {
-      "event": "GTWC America – Sonoma",
+      "event": "Sonoma",
       "location": "Sonoma Raceway, USA",
       "from": "2027-04-02",
       "to": "2027-04-04",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Texas 8 Hour (mit IGTC)",
+      "event": "Texas 8 Hour (mit IGTC)",
       "location": "Circuit of The Americas, USA",
       "from": "2027-05-07",
       "to": "2027-05-09",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Watkins Glen",
+      "event": "Watkins Glen",
       "location": "Watkins Glen International, USA",
       "from": "2027-05-21",
       "to": "2027-05-23",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Road Atlanta",
+      "event": "Road Atlanta",
       "location": "Michelin Raceway Road Atlanta, USA",
       "from": "2027-06-18",
       "to": "2027-06-20",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Road America",
+      "event": "Road America",
       "location": "Road America, USA",
       "from": "2027-08-27",
       "to": "2027-08-29",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Barber",
+      "event": "Barber",
       "location": "Barber Motorsports Park, USA",
       "from": "2027-09-10",
       "to": "2027-09-12",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC America – Indianapolis",
+      "event": "Indianapolis",
       "location": "Indianapolis Motor Speedway, USA",
       "from": "2027-10-01",
       "to": "2027-10-03",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "America"
     },
     {
-      "event": "GTWC Asia – Sepang",
+      "event": "Sepang",
       "location": "Sepang International Circuit, Malaysia",
       "from": "2027-04-03",
       "to": "2027-04-04",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Asia – Buriram",
+      "event": "Buriram",
       "location": "Chang International Circuit, Thailand",
       "from": "2027-05-01",
       "to": "2027-05-02",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Asia – Suzuka",
+      "event": "Suzuka",
       "location": "Suzuka Circuit, Japan",
       "from": "2027-06-12",
       "to": "2027-06-13",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Asia – Fuji",
+      "event": "Fuji",
       "location": "Fuji Speedway, Japan",
       "from": "2027-07-10",
       "to": "2027-07-11",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Asia – Beijing",
+      "event": "Beijing",
       "location": "Beijing Street Circuit, China",
       "from": "2027-10-02",
       "to": "2027-10-03",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Asia – Shanghai",
+      "event": "Shanghai",
       "location": "Shanghai International Circuit, China",
       "from": "2027-10-23",
       "to": "2027-10-24",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Asia"
     },
     {
-      "event": "GTWC Australia – Phillip Island",
+      "event": "Phillip Island",
       "location": "Phillip Island Grand Prix Circuit, Australien",
       "from": "2027-04-17",
       "to": "2027-04-18",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Australia"
     },
     {
-      "event": "GTWC Australia – The Bend",
+      "event": "The Bend",
       "location": "The Bend Motorsport Park, Australien",
       "from": "2027-05-29",
       "to": "2027-05-30",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Australia"
     },
     {
-      "event": "GTWC Australia – Sydney Motorsport Park",
+      "event": "Sydney Motorsport Park",
       "location": "Sydney Motorsport Park, Australien",
       "from": "2027-07-24",
       "to": "2027-07-25",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Australia"
     },
     {
-      "event": "GTWC Australia – Queensland Raceway",
+      "event": "Queensland Raceway",
       "location": "Queensland Raceway, Australien",
       "from": "2027-09-18",
       "to": "2027-09-19",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Australia"
     },
     {
-      "event": "GTWC Australia – Bathurst",
+      "event": "Bathurst",
       "location": "Mount Panorama, Australien",
       "from": "2027-10-30",
       "to": "2027-10-31",
-      "note": "Vorläufiger Kalender."
+      "note": "Vorläufiger Kalender.",
+      "region": "Australia"
     }
   ]
 }

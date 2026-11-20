@@ -110,8 +110,9 @@ def ics_time(value: str, params: dict) -> date | datetime:
 class Event:
     def __init__(self, series: str, title: str, start, end, *, location: str = "",
                  tv: str = "", note: str = "", url: str = "", uid_key: str = "",
-                 kind: str = "session", stream: str = ""):
+                 kind: str = "session", stream: str = "", region: str = ""):
         self.series, self.title, self.start, self.end = series, title, start, end
+        self.region = region  # z. B. Europe / America / Asia / Australia
         self.stream = stream  # direkter Livestream-Link (z. B. YouTube-Video)
         self.location, self.tv, self.note, self.url = location, tv, note, url
         self.kind = kind  # "weekend" (ganztägig) oder "session"
@@ -166,7 +167,8 @@ def from_motorsport_total(series: dict, offline: bool) -> list[Event]:
         title = rest
         if sid == "wec" and mt_series.lower() == "24h le mans":
             title = f"24h Le Mans – {rest}" if "le mans" not in rest.lower() else rest
-        out.append(Event(sid, title, start, end, location=loc, kind="weekend",
+        region = "Europe" if sid == "gtwc" else ""
+        out.append(Event(sid, title, start, end, location=loc, kind="weekend", region=region,
                          url="https://www.motorsport-total.com",
                          uid_key=f"mt|{sid}|{start.isoformat()}|{rest}"))
     return out
@@ -247,6 +249,7 @@ def from_session_files(series: dict) -> list[Event]:
                                  location=w.get("location", ""), tv=w.get("tv", ""),
                                  note=w.get("note", ""), url=doc.get("source", ""),
                                  kind="weekend", stream=w.get("stream", ""),
+                                 region=w.get("region") or doc.get("region", ""),
                                  uid_key=f"wk|{sid}|{w['event']}|{d_from}"))
             if "sessions" not in doc:
                 continue
@@ -263,6 +266,7 @@ def from_session_files(series: dict) -> list[Event]:
                                  tv=s.get("tv") or doc.get("tv", ""),
                                  note=s.get("note", ""), url=doc.get("source", ""),
                                  stream=s.get("stream") or doc.get("stream", ""),
+                                 region=doc.get("region", ""),
                                  uid_key=f"file|{sid}|{event_name}|{s['name']}|{start.date()}"))
         except Exception as e:  # noqa: BLE001
             warn(f"{path.name} fehlerhaft: {e}")
@@ -304,7 +308,7 @@ def dedupe(events: list[Event]) -> list[Event]:
     Startdatum gewinnt die zuerst geladene Quelle (Motorsport-Total)."""
     seen, weekends, out = set(), set(), []
     for ev in events:
-        wk = (ev.series, ev.day()) if ev.kind == "weekend" else None
+        wk = (ev.series, ev.region, ev.day()) if ev.kind == "weekend" else None
         if ev.uid in seen or (wk and wk in weekends):
             continue
         seen.add(ev.uid)
@@ -351,7 +355,8 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
     for ev in sorted(events, key=lambda e: (fmt(e.start) if not e.all_day else fmt(e.start) + "T000000Z")):
         s = series[ev.series]
         prefix = "🏁" if ev.kind == "weekend" else "🏎️"
-        summary = f"{prefix} {s['kurz']}: {ev.title}"
+        label = f"{s['kurz']} {ev.region}" if ev.region else s["kurz"]
+        summary = f"{prefix} {label}: {ev.title}"
         desc = [f"📺 Deutschland: {ev.tv}"]
         if ev.kind == "session":
             local = ev.start.astimezone(BERLIN)
@@ -391,9 +396,14 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
 
 
 def render_index(series: dict, counts: dict, base_note: str) -> str:
-    rows = "\n".join(
-        f'<li><a href="{sid}.ics">{s["name"]}</a> <small>({counts.get(sid, 0)} Termine)</small></li>'
-        for sid, s in series.items())
+    def row(sid, s):
+        subs = "".join(f'<li><a href="{sid}-{r.lower()}.ics">{s["kurz"]} {r}</a> '
+                       f'<small>({counts.get(f"{sid}-{r.lower()}", 0)} Termine)</small></li>'
+                       for r in s.get("regionen", []))
+        sub_html = f"<ul>{subs}</ul>" if subs else ""
+        return (f'<li><a href="{sid}.ics">{s["name"]}</a> '
+                f'<small>({counts.get(sid, 0)} Termine)</small>{sub_html}</li>')
+    rows = "\n".join(row(sid, s) for sid, s in series.items())
     return f"""<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Motorsport-Kalender</title>
@@ -433,6 +443,13 @@ def main() -> int:
         counts[sid] = len(sub)
         (OUT / f"{sid}.ics").write_text(render(f"Motorsport – {s['name']}", sub, series, stamp),
                                         encoding="utf-8")
+    for sid, s in series.items():
+        for reg in s.get("regionen", []):
+            sub = [e for e in events if e.series == sid and e.region == reg]
+            key = f"{sid}-{reg.lower()}"
+            counts[key] = len(sub)
+            (OUT / f"{key}.ics").write_text(render(f"Motorsport – {s['kurz']} {reg}", sub, series, stamp),
+                                            encoding="utf-8")
     note = f"Stand: {datetime.now(BERLIN).strftime('%d.%m.%Y %H:%M')} Uhr · {len(events)} Termine"
     (OUT / "index.html").write_text(render_index(series, counts, note), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(
