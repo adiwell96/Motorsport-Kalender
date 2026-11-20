@@ -73,10 +73,13 @@
       "mt": [
         "Rallye-WM"
       ],
-      "tv": "Rally.TV (Stream); Rally.TV-Gratiskanal bei Zattoo (v. a. Highlights, ausgewählte Live-Inhalte)",
-      "tv_stand": "2026-11",
+      "tv": "Rally.TV (alle Wertungsprüfungen live, Stream)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "youtube": "",
-      "stream_de": ""
+      "stream_de": "https://rally.tv",
+      "quellen": [
+        "https://www.wrc.com/en/calendar?rb3TabId=upcoming"
+      ]
     },
     {
       "id": "w2rc",
