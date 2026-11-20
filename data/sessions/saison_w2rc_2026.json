@@ -2,12 +2,10 @@
   "series": "w2rc",
   "source": "https://www.worldrallyraidchampionship.com/en/calendar",
   "weekends": [
-    {
-      "event": "Abu Dhabi Desert Challenge",
-      "location": "Vereinigte Arabische Emirate",
-      "from": "2026-11-22",
-      "to": "2026-11-27",
-      "note": "Saisonfinale"
-    }
+    {"event": "Rallye Dakar", "location": "Saudi-Arabien (Start/Ziel Yanbu)", "from": "2026-01-03", "to": "2026-01-17"},
+    {"event": "BP Ultimate Rally-Raid Portugal", "location": "Portugal", "from": "2026-03-17", "to": "2026-03-22"},
+    {"event": "Desafío Ruta 40 YPF", "location": "Argentinien", "from": "2026-05-24", "to": "2026-05-29"},
+    {"event": "Rallye OLA Energy du Maroc", "location": "Marokko", "from": "2026-09-28", "to": "2026-10-03"},
+    {"event": "Abu Dhabi Desert Challenge", "location": "Al Ain / Madinat Zayed, VAE", "from": "2026-11-22", "to": "2026-11-27", "note": "Saisonfinale; Etappen 23.–27.11., Startzeiten noch nicht veröffentlicht"}
   ]
 }

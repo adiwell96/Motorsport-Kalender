@@ -1,0 +1,12 @@
+{
+  "series": "24hseries",
+  "source": "https://www.24hseries.com/news/michelin-24h-series-european-series-2026-calendar-revealed",
+  "weekends": [
+    {"event": "Michelin 6H Abu Dhabi", "location": "Yas Marina Circuit, VAE", "from": "2026-01-09", "to": "2026-01-10"},
+    {"event": "Michelin 12H Mugello", "location": "Mugello, Italien", "from": "2026-03-20", "to": "2026-03-22"},
+    {"event": "Michelin 12H Spa-Francorchamps", "location": "Spa-Francorchamps, Belgien", "from": "2026-04-17", "to": "2026-04-19"},
+    {"event": "Michelin 12H Paul Ricard", "location": "Circuit Paul Ricard, Frankreich", "from": "2026-06-05", "to": "2026-06-07"},
+    {"event": "Michelin 12H Nürburgring", "location": "Nürburgring GP-Strecke, Deutschland", "from": "2026-07-03", "to": "2026-07-05"},
+    {"event": "Michelin 24H Barcelona", "location": "Circuit de Barcelona-Catalunya, Spanien", "from": "2026-09-18", "to": "2026-09-20"}
+  ]
+}

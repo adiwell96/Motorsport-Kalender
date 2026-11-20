@@ -1,12 +1,13 @@
 {
   "series": "sro",
-  "source": "https://www.gt-world-challenge-asia.com/news/991/entries-open-for-2026-fia-gt-world-cup-as-new-silver-cup-launches",
+  "source": "https://www.britishgt.com/news/1173/british-gt-championship-reveals-new-look-2026-calendar",
   "weekends": [
-    {
-      "event": "FIA GT World Cup",
-      "location": "Circuito da Guia, Macau",
-      "from": "2026-11-19",
-      "to": "2026-11-22"
-    }
+    {"event": "British GT – Silverstone 500", "location": "Silverstone, Großbritannien", "from": "2026-04-25", "to": "2026-04-26"},
+    {"event": "British GT – Oulton Park", "location": "Oulton Park, Großbritannien", "from": "2026-05-23", "to": "2026-05-25"},
+    {"event": "British GT – Spa-Francorchamps", "location": "Spa-Francorchamps, Belgien", "from": "2026-06-20", "to": "2026-06-21"},
+    {"event": "British GT – Snetterton", "location": "Snetterton, Großbritannien", "from": "2026-08-15", "to": "2026-08-16"},
+    {"event": "British GT – Donington Park", "location": "Donington Park, Großbritannien", "from": "2026-09-05", "to": "2026-09-06"},
+    {"event": "British GT – Brands Hatch", "location": "Brands Hatch, Großbritannien", "from": "2026-09-26", "to": "2026-09-27", "note": "Saisonfinale"},
+    {"event": "FIA GT World Cup Macau", "location": "Circuito da Guia, Macau", "from": "2026-11-19", "to": "2026-11-22"}
   ]
 }

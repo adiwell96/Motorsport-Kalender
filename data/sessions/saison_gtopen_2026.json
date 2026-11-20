@@ -1,0 +1,14 @@
+{
+  "series": "gtopen",
+  "source": "https://gtopen.gtsport.es/blog/2026-calendar-the-barcelona-round-moved-to-23-25-october",
+  "weekends": [
+    {"event": "Portimão", "location": "Autódromo Internacional do Algarve, Portugal", "from": "2026-04-17", "to": "2026-04-19"},
+    {"event": "Spa-Francorchamps (GT Open 500)", "location": "Spa-Francorchamps, Belgien", "from": "2026-05-15", "to": "2026-05-17"},
+    {"event": "Misano", "location": "Misano World Circuit, Italien", "from": "2026-06-05", "to": "2026-06-07"},
+    {"event": "Hungaroring", "location": "Hungaroring, Ungarn", "from": "2026-07-03", "to": "2026-07-05"},
+    {"event": "Paul Ricard", "location": "Circuit Paul Ricard, Frankreich", "from": "2026-07-17", "to": "2026-07-19"},
+    {"event": "Hockenheimring", "location": "Hockenheimring, Deutschland", "from": "2026-09-11", "to": "2026-09-13"},
+    {"event": "Monza (GT Open 500)", "location": "Monza, Italien", "from": "2026-09-25", "to": "2026-09-27"},
+    {"event": "Barcelona", "location": "Circuit de Barcelona-Catalunya, Spanien", "from": "2026-10-23", "to": "2026-10-25", "note": "Saisonfinale"}
+  ]
+}
