@@ -169,7 +169,10 @@
         "Asian-Le-Mans-Series"
       ],
       "tv": "Livestream (YouTube Asian Le Mans Series)",
-      "tv_stand": "ungeprüft"
+      "tv_stand": "ungeprüft",
+      "quellen": [
+        "https://www.asianlemansseries.com"
+      ]
     },
     {
       "id": "supergt",
