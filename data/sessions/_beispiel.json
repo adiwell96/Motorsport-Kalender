@@ -1,0 +1,15 @@
+{
+  "_info": "Vorlage. Dateien mit _ am Anfang werden ignoriert. Dateiname: JJJJ-MM-TT_serie_ort.json (Datum = erster Tag). Zeiten in Ortszeit der Strecke (timezone) ODER mit Offset/Z. 'end' optional.",
+  "series": "dtm",
+  "event": "Hockenheimring",
+  "location": "Hockenheimring, Deutschland",
+  "timezone": "Europe/Berlin",
+  "tv": "ProSieben + Joyn",
+  "source": "https://www.dtm.com",
+  "sessions": [
+    {"name": "1. Freies Training", "start": "2026-10-09T13:00", "end": "2026-10-09T13:45", "tv": "Joyn FAN TV"},
+    {"name": "Qualifying 1", "start": "2026-10-10T09:45", "end": "2026-10-10T10:05", "tv": "Joyn FAN TV"},
+    {"name": "Rennen 1", "start": "2026-10-10T13:30", "end": "2026-10-10T14:30"},
+    {"name": "Rennen 2", "start": "2026-10-11T13:30", "end": "2026-10-11T14:30", "note": "Saisonfinale"}
+  ]
+}

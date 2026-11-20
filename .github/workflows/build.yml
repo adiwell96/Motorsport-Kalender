@@ -1,0 +1,53 @@
+name: Kalender bauen
+
+on:
+  schedule:
+    - cron: "17 3,15 * * *"   # zweimal täglich (03:17 und 15:17 UTC)
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Kalender erzeugen
+        run: python generator/build.py
+
+      - name: Cache der Quellen sichern
+        run: |
+          git config user.name "kalender-bot"
+          git config user.email "kalender-bot@users.noreply.github.com"
+          git add data/cache
+          git diff --cached --quiet || git commit -m "Quellen-Cache aktualisiert [skip ci]"
+          git push || true
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

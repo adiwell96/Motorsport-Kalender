@@ -1,0 +1,4 @@
+{
+  "_info": "TV-Angabe für einzelne Wochenenden/Sessions, überschreibt den Serien-Standard. Felder: series, from (JJJJ-MM-TT), to (optional), session (optional, Textteil des Session-Namens), tv.",
+  "overrides": []
+}
