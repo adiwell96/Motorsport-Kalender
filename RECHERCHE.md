@@ -18,6 +18,22 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
 4. Recherchiere, **wo die Sessions in Deutschland laufen** (TV-Sender, Stream,
    Free-TV oder Pay-TV). Sei konkret pro Session, falls es Unterschiede gibt
    (z. B. F1: Sky für alles, RTL nur für bestimmte Rennen).
+4b. **Übertragungs-Links für den kompletten Kalender:** Suche für jedes Wochenende
+   im Kalender (auch weiter als 21 Tage voraus, sobald etwas angekündigt ist) die
+   konkreten Links, wo es in Deutschland läuft – **Free-TV und Pay-TV**: z. B.
+   Sky / Sky Go / WOW, discovery+, Eurosport, Motorvision TV, DF1, PitCast,
+   Motorsport.tv, Joyn, RTL+, Disney+, Rally.TV, Red Bull TV, ServusTV, Sport1.
+   Trage sie als Liste `links` ein (Session, Wochenende oder ganze Datei):
+   `[{"name": "Sky Go", "url": "https://…", "sprache": "de"}]`.
+   **Deutsche Angebote zuerst** (`"sprache": "de"` bei deutschem Kommentar oder
+   deutschem Anbieter), danach internationale. Am besten direkte Links auf die
+   Sendung/den Stream (Programmseite, Event-Seite, YouTube-Video), sonst die
+   Startseite des Anbieters. Serien-weite Standard-Links pflegst du im Feld
+   `links` in `data/series.json`, F1-Wochenend-Links in `data/tv_overrides.json`.
+4c. **Links regelmäßig prüfen:** Lies `data/cache/linkcheck.json` (wird zweimal
+   täglich automatisch erzeugt). Ersetze jeden Link mit `"status": "tot"` durch
+   einen funktionierenden oder entferne ihn. Prüfe bei Links mit
+   `"unerreichbar"` selbst, ob sie noch stimmen.
 4a. **YouTube-Abgleich:** Prüfe auf dem offiziellen YouTube-Kanal der Serie (Feld
    `youtube` in `data/series.json`), ob für die Sessions Livestreams angekündigt
    sind (Tab „Live“ bzw. geplante Streams). Trage den direkten Link zum Stream

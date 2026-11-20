@@ -113,6 +113,7 @@ class Event:
                  kind: str = "session", stream: str = "", region: str = ""):
         self.series, self.title, self.start, self.end = series, title, start, end
         self.region = region  # z. B. Europe / America / Asia / Australia
+        self.links: list[dict] = []  # [{"name", "url", "sprache"}], deutsche zuerst
         self.stream = stream  # direkter Livestream-Link (z. B. YouTube-Video)
         self.location, self.tv, self.note, self.url = location, tv, note, url
         self.kind = kind  # "weekend" (ganztägig) oder "session"
@@ -251,6 +252,7 @@ def from_session_files(series: dict) -> list[Event]:
                                  kind="weekend", stream=w.get("stream", ""),
                                  region=w.get("region") or doc.get("region", ""),
                                  uid_key=f"wk|{sid}|{w['event']}|{d_from}"))
+                out[-1].links = list(w.get("links", [])) + list(doc.get("links", []))
             if "sessions" not in doc:
                 continue
             tz = ZoneInfo(doc.get("timezone", "Europe/Berlin"))
@@ -268,6 +270,7 @@ def from_session_files(series: dict) -> list[Event]:
                                  stream=s.get("stream") or doc.get("stream", ""),
                                  region=doc.get("region", ""),
                                  uid_key=f"file|{sid}|{event_name}|{s['name']}|{start.date()}"))
+                out[-1].links = list(s.get("links", [])) + list(doc.get("links", []))
         except Exception as e:  # noqa: BLE001
             warn(f"{path.name} fehlerhaft: {e}")
     return out
@@ -298,6 +301,7 @@ def apply_tv(events: list[Event], series: dict, overrides: list[dict]) -> None:
                     if not o.get("session") or o["session"].lower() in ev.title.lower():
                         ev.tv = o.get("tv", "")
                         ev.stream = ev.stream or o.get("stream", "")
+                        ev.links = ev.links + list(o.get("links", []))
                         break
         if not ev.tv:
             ev.tv = series[ev.series]["tv"]
@@ -316,6 +320,85 @@ def dedupe(events: list[Event]) -> list[Event]:
             weekends.add(wk)
         out.append(ev)
     return out
+
+
+def collect_links(ev: Event, s: dict) -> list[dict]:
+    """Session-/Event-Links, dann Serien-Links; deutsche zuerst, ohne Dubletten,
+    ohne Links, die der Link-Check als tot gemeldet hat."""
+    raw = list(ev.links)
+    if ev.stream:
+        raw.append({"name": "Livestream", "url": ev.stream})
+    raw += list(s.get("links", []))
+    if s.get("stream_de"):
+        raw.append({"name": "Deutscher Stream", "url": s["stream_de"], "sprache": "de"})
+    if s.get("youtube"):
+        raw.append({"name": "YouTube-Kanal", "url": s["youtube"]})
+    seen, out = set(), []
+    for l in raw:
+        u = (l.get("url") or "").strip()
+        if not u or u in seen or u in DEAD_LINKS:
+            continue
+        seen.add(u)
+        out.append(l)
+    out.sort(key=lambda l: 0 if l.get("sprache", "").lower() == "de" else 1)
+    return out
+
+
+DEAD_LINKS: set[str] = set()
+LINKCHECK = CACHE / "linkcheck.json"
+
+
+def all_urls(series: dict) -> set[str]:
+    urls = set()
+    def take(obj):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if k in ("url", "stream", "stream_de", "youtube") and isinstance(v, str) and v.startswith("http"):
+                    urls.add(v.strip())
+                else:
+                    take(v)
+        elif isinstance(obj, list):
+            for x in obj:
+                take(x)
+    take(list(series.values()))
+    for f in (DATA / "sessions").glob("*.json"):
+        if not f.name.startswith("_"):
+            try:
+                take(json.loads(f.read_text(encoding="utf-8")))
+            except ValueError:
+                pass
+    if (DATA / "tv_overrides.json").exists():
+        take(json.loads((DATA / "tv_overrides.json").read_text(encoding="utf-8")))
+    return urls
+
+
+def check_links(series: dict) -> dict:
+    """Prüft alle Übertragungs-Links. Tot = 404/410 oder Host nicht erreichbar
+    (zweimal in Folge). 401/403/429 (Login, Bot-Schutz) gelten als 'ok-geschützt'."""
+    import urllib.error
+    prev = json.loads(LINKCHECK.read_text(encoding="utf-8")) if LINKCHECK.exists() else {}
+    result = {}
+    for u in sorted(all_urls(series)):
+        status = "ok"
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}, method="GET")
+            with urllib.request.urlopen(req, timeout=20) as r:
+                code = r.status
+                body = r.read(200000).decode("utf-8", "ignore") if "youtube.com/watch" in u else ""
+            if "youtube.com/watch" in u and ("Video unavailable" in body or "Dieses Video ist nicht verfügbar" in body):
+                status = "tot"
+        except urllib.error.HTTPError as e:
+            code = e.code
+            status = "tot" if e.code in (404, 410) else "ok-geschützt"
+        except Exception as e:  # noqa: BLE001
+            code = str(e)[:80]
+            status = "tot" if prev.get(u, {}).get("status") in ("unerreichbar", "tot") else "unerreichbar"
+        result[u] = {"status": status, "code": code,
+                     "geprueft": datetime.now(UTC).strftime("%Y-%m-%dT%H:%MZ")}
+        if status == "tot":
+            warn(f"Toter Link: {u} ({code})")
+    LINKCHECK.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    return result
 
 
 # --------------------------------------------------------------------------- ICS schreiben
@@ -365,19 +448,15 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
         else:
             desc.append("Rennwochenende – genaue Session-Zeiten folgen als eigene Termine, "
                         "sobald veröffentlicht.")
-        channel = s.get("youtube", "")
-        de = s.get("stream_de", "")
-        if ev.stream:
-            desc.append(f"▶️ Livestream: {ev.stream}")
-        if de and de != ev.stream:
-            desc.append(f"🇩🇪 Deutscher Stream: {de}")
-        if channel and channel != ev.stream:
-            desc.append(f"▶️ YouTube-Kanal: {channel}")
+        links = collect_links(ev, s)
+        for l in links:
+            flag = "🇩🇪" if l.get("sprache", "").lower() == "de" else "▶️"
+            desc.append(f"{flag} {l.get('name') or 'Übertragung'}: {l['url']}")
         if ev.note:
             desc.append(ev.note)
         if ev.url:
             desc.append(f"Quelle: {ev.url}")
-        link = ev.stream or de or channel or ev.url
+        link = links[0]["url"] if links else ev.url
         L += ["BEGIN:VEVENT", f"UID:{ev.uid}", f"DTSTAMP:{stamp}"]
         if ev.all_day:
             L += [f"DTSTART;VALUE=DATE:{fmt(ev.start)}", f"DTEND;VALUE=DATE:{fmt(ev.end)}",
@@ -424,6 +503,13 @@ small{{color:#666}}</style></head><body>
 def main() -> int:
     offline = "--offline" in sys.argv
     series = load_series()
+    try:
+        lc = check_links(series) if not offline else (
+            json.loads(LINKCHECK.read_text(encoding="utf-8")) if LINKCHECK.exists() else {})
+    except Exception as e:  # noqa: BLE001
+        warn(f"Link-Check fehlgeschlagen: {e}")
+        lc = {}
+    DEAD_LINKS.update(u for u, v in lc.items() if v.get("status") == "tot")
     events = []
     events += from_motorsport_total(series, offline)
     events += from_f1_api(offline)
@@ -453,7 +539,8 @@ def main() -> int:
     note = f"Stand: {datetime.now(BERLIN).strftime('%d.%m.%Y %H:%M')} Uhr · {len(events)} Termine"
     (OUT / "index.html").write_text(render_index(series, counts, note), encoding="utf-8")
     (OUT / "status.json").write_text(json.dumps(
-        {"stand": stamp, "termine": len(events), "pro_serie": counts, "warnungen": WARNINGS},
+        {"stand": stamp, "termine": len(events), "pro_serie": counts, "warnungen": WARNINGS,
+         "tote_links": sorted(DEAD_LINKS)},
         ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{len(events)} Termine geschrieben. Pro Serie: {counts}")
     return 0
