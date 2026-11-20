@@ -3,12 +3,16 @@
   "event": "Macau (Guia Race)",
   "location": "Circuito da Guia, Macau",
   "timezone": "Australia/Sydney",
-  "tv": "TrillerTV (offizieller Livestream, kostenlos, englisch); deutsche Übertragung für Macau nicht bestätigt",
-  "source": "https://speedcafe.com/motorsport-news-2026-live-stream-macau-grand-prix-formula-regional-gt-tcr-superbikes/ (Zeiten in AEDT) ; Übertragung: https://www.trillertv.com/watch/fia-tcr-2026-macau-r1/2pl23/",
+  "tv": "TrillerTV (offizieller Livestream, kostenlos, englisch); laut Motorsport-Total auch im kostenlosen Macau-GP-Livestream (TCR-Rennen nur englisch). Motorsport Television DE überträgt das TCR-Finale NICHT (Exklusivrechte in Ungarn/Südkorea, keine Internet-Übertragung erlaubt)",
+  "source": "https://www.motorsport-total.com/formelsport/news/alle-infos-zum-macau-grand-prix-2026-mit-zeitplan-livestream-und-starterliste-26111801 (Zeitplan, deutsche Zeit) ; https://speedcafe.com/motorsport-news-2026-live-stream-macau-grand-prix-formula-regional-gt-tcr-superbikes/ (Zeitplan, AEDT) ; Übertragung: https://www.motorsporttelevision.de/rennserien/events/macau-grand-prix/news/drittes-mal-in-folge-der-macau-gp-live-auf-deutsch-bei-mtd , https://www.trillertv.com/watch/fia-tcr-2026-macau-r1/2pl23/",
   "links": [
     {
-      "name": "TrillerTV – Rennen 1 (kostenlos)",
+      "name": "TrillerTV – Rennen 1 (kostenlos, englisch)",
       "url": "https://www.trillertv.com/watch/fia-tcr-2026-macau-r1/2pl23/"
+    },
+    {
+      "name": "Motorsport-Total – Macau-GP-Livestream",
+      "url": "https://www.motorsport-total.com/langstrecke/livestream/macau-grand-prix"
     },
     {
       "name": "TCR TV (YouTube, international)",
@@ -16,11 +20,37 @@
     }
   ],
   "sessions": [
-    {"name": "1. Training", "start": "2026-11-19T14:15", "end": "2026-11-19T14:45"},
-    {"name": "2. Training", "start": "2026-11-19T17:30", "end": "2026-11-19T18:00"},
-    {"name": "Qualifying 1", "start": "2026-11-20T15:20", "end": "2026-11-20T15:50"},
-    {"name": "Qualifying 2", "start": "2026-11-20T16:05", "end": "2026-11-20T16:20"},
-    {"name": "Rennen 1 (10 Runden)", "start": "2026-11-21T16:20", "end": "2026-11-21T17:00"},
-    {"name": "Rennen 2 (10 Runden)", "start": "2026-11-22T14:00", "end": "2026-11-22T14:40", "note": "Geo-Verfügbarkeit des TrillerTV-Streams in Deutschland nicht bestätigt"}
-  ]
+    {
+      "name": "1. Training",
+      "start": "2026-11-19T14:15",
+      "end": "2026-11-19T14:45"
+    },
+    {
+      "name": "2. Training",
+      "start": "2026-11-19T17:30",
+      "end": "2026-11-19T18:00"
+    },
+    {
+      "name": "Qualifying 1",
+      "start": "2026-11-20T15:20",
+      "end": "2026-11-20T15:50"
+    },
+    {
+      "name": "Qualifying 2",
+      "start": "2026-11-20T16:05",
+      "end": "2026-11-20T16:20"
+    },
+    {
+      "name": "Rennen 1 (10 Runden)",
+      "start": "2026-11-21T16:20",
+      "end": "2026-11-21T17:00"
+    },
+    {
+      "name": "Rennen 2 (10 Runden)",
+      "start": "2026-11-22T14:00",
+      "end": "2026-11-22T14:40",
+      "note": "Geo-Verfügbarkeit des TrillerTV-Streams in Deutschland nicht bestätigt"
+    }
+  ],
+  "note": "Motorsport Television DE zeigt die TCR-Sessions in Macau nicht (Rechte-Einschränkung)"
 }
