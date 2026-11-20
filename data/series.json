@@ -261,11 +261,11 @@
         "GT-World-Challenge"
       ],
       "tv": "GT World YouTube (Livestream, auch deutsch)",
-      "tv_stand": "2026-11",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "quellen": [
         "https://www.gt-world-challenge.com/calendar"
       ],
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "youtube": "https://www.youtube.com/@GTWorld",
       "regionen": [
         "Europe",
         "America",
@@ -274,8 +274,9 @@
       ],
       "links": [
         {
-          "name": "GT World (YouTube)",
-          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+          "name": "GT World (YouTube, auch mit deutschem Kommentar)",
+          "url": "https://www.youtube.com/@GTWorld",
+          "sprache": "de"
         }
       ]
     },
@@ -289,15 +290,16 @@
         "Intercontinental GT-Challenge"
       ],
       "tv": "GT World YouTube (Livestream)",
-      "tv_stand": "ungeprüft",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "quellen": [
         "https://www.intercontinentalgtchallenge.com/calendar"
       ],
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "youtube": "https://www.youtube.com/@GTWorld",
       "links": [
         {
-          "name": "GT World (YouTube)",
-          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+          "name": "GT World (YouTube, auch mit deutschem Kommentar)",
+          "url": "https://www.youtube.com/@GTWorld",
+          "sprache": "de"
         }
       ]
     },
@@ -307,12 +309,13 @@
       "kurz": "SRO GT3",
       "mt": [],
       "tv": "wird je Event recherchiert",
-      "tv_stand": "ungeprüft",
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "https://www.youtube.com/@GTWorld",
       "links": [
         {
-          "name": "GT World (YouTube)",
-          "url": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+          "name": "GT World (YouTube, auch mit deutschem Kommentar)",
+          "url": "https://www.youtube.com/@GTWorld",
+          "sprache": "de"
         }
       ]
     },
