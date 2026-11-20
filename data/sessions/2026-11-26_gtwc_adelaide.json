@@ -1,0 +1,45 @@
+{
+  "series": "gtwc",
+  "event": "GTWC Australia Adelaide",
+  "location": "Adelaide Street Circuit, Australien",
+  "timezone": "Australia/Adelaide",
+  "tv": "GT World YouTube (Livestream Sa/So, außerhalb Australiens kostenlos)",
+  "source": "https://www.supercars.com/news/supercars-news-2026-adelaide-grand-final-track-schedule-revealed-times-racing-super2-series-finals-supports ; Übertragung: https://www.speedseries.com.au/how-to-watch-shannons-speedseries/",
+  "sessions": [
+    {
+      "name": "1. Training",
+      "start": "2026-11-26T08:20",
+      "end": "2026-11-26T09:00",
+      "note": "Übertragung Do/Fr nicht bestätigt"
+    },
+    {
+      "name": "2. Training",
+      "start": "2026-11-26T12:25",
+      "end": "2026-11-26T13:05",
+      "note": "Übertragung Do/Fr nicht bestätigt"
+    },
+    {
+      "name": "Qualifying 1",
+      "start": "2026-11-27T11:15",
+      "end": "2026-11-27T11:25",
+      "note": "Übertragung Do/Fr nicht bestätigt"
+    },
+    {
+      "name": "Qualifying 2",
+      "start": "2026-11-27T11:35",
+      "end": "2026-11-27T11:45",
+      "note": "Übertragung Do/Fr nicht bestätigt"
+    },
+    {
+      "name": "Rennen 1",
+      "start": "2026-11-28T09:10",
+      "end": "2026-11-28T10:10"
+    },
+    {
+      "name": "Rennen 2",
+      "start": "2026-11-29T09:40",
+      "end": "2026-11-29T10:40",
+      "note": "Saisonfinale"
+    }
+  ]
+}
