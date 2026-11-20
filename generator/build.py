@@ -361,15 +361,18 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
             desc.append("Rennwochenende – genaue Session-Zeiten folgen als eigene Termine, "
                         "sobald veröffentlicht.")
         channel = s.get("youtube", "")
+        de = s.get("stream_de", "")
         if ev.stream:
             desc.append(f"▶️ Livestream: {ev.stream}")
+        if de and de != ev.stream:
+            desc.append(f"🇩🇪 Deutscher Stream: {de}")
         if channel and channel != ev.stream:
             desc.append(f"▶️ YouTube-Kanal: {channel}")
         if ev.note:
             desc.append(ev.note)
         if ev.url:
             desc.append(f"Quelle: {ev.url}")
-        link = ev.stream or channel or ev.url
+        link = ev.stream or de or channel or ev.url
         L += ["BEGIN:VEVENT", f"UID:{ev.uid}", f"DTSTAMP:{stamp}"]
         if ev.all_day:
             L += [f"DTSTART;VALUE=DATE:{fmt(ev.start)}", f"DTEND;VALUE=DATE:{fmt(ev.end)}",

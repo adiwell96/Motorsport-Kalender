@@ -50,6 +50,15 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
 
 ## Regeln
 
+- **Deutsche Übertragung hat Vorrang.** Bevorzuge deutsche Sender und Streams mit
+  deutschem Kommentar (z. B. F1: Sky / WOW, WEC: discovery+, IMSA: Motorvision TV).
+  YouTube oder englische Streams nur, wenn es keine deutsche Übertragung gibt,
+  oder zusätzlich als Alternative. Den deutschen Stream-Link pflegst du im Feld
+  `stream_de` (Serie) bzw. `stream` (Session, falls es einen direkten Link gibt).
+- Die Angaben mit `"tv_stand": "… (Nutzerangabe)"` stammen vom Nutzer. Ändere sie
+  nur, wenn eine aktuelle, belastbare Quelle einen Senderwechsel belegt, und
+  nenne das dann ausdrücklich in deiner Abschlussmeldung.
+
 - Nur Zeiten eintragen, die du in einer Quelle gefunden hast. Nichts schätzen.
   Ist ein Zeitplan noch nicht veröffentlicht, lass das Wochenende weg; es kommt
   nächste Woche dran.

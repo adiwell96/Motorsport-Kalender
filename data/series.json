@@ -1,5 +1,5 @@
 {
-  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt. 'youtube' = offizieller YouTube-Kanal (leer = keiner bekannt/kein Livestream in DE).",
+  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt. 'youtube' = offizieller YouTube-Kanal (leer = keiner bekannt/kein Livestream in DE). 'stream_de' = deutscher Stream/Sender-Link, hat Vorrang vor YouTube.",
   "series": [
     {
       "id": "f1",
@@ -8,9 +8,10 @@
       "mt": [
         "Formel 1"
       ],
-      "tv": "Sky Sport F1 / WOW (alle Sessions); ausgewählte Rennen zusätzlich live bei RTL",
-      "tv_stand": "2026-11",
-      "youtube": ""
+      "tv": "Sky Sport F1 (alle Sessions live, deutscher Kommentar); Stream: Sky Go / WOW. Ausgewählte Rennen zusätzlich live bei RTL",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "",
+      "stream_de": "https://www.wowtv.de"
     },
     {
       "id": "supercup",
@@ -25,7 +26,8 @@
       "quellen": [
         "https://racing.porsche.com/de-DE/series/mobil-1-supercup"
       ],
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "wec",
@@ -35,9 +37,10 @@
         "WEC",
         "24h Le Mans"
       ],
-      "tv": "Eurosport / HBO Max",
-      "tv_stand": "2026-11",
-      "youtube": ""
+      "tv": "discovery+ (alle Rennen live, deutsch); Eurosport",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "",
+      "stream_de": "https://www.discoveryplus.com/de"
     },
     {
       "id": "imsa",
@@ -46,9 +49,10 @@
       "mt": [
         "IMSA"
       ],
-      "tv": "IMSA.tv / YouTube (Livestream)",
-      "tv_stand": "ungeprüft",
-      "youtube": ""
+      "tv": "Motorvision TV (deutsch)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "",
+      "stream_de": "https://www.motorvision.tv"
     },
     {
       "id": "fe",
@@ -59,7 +63,8 @@
       ],
       "tv": "Disney+ (alle Sessions); Free-TV-Partner für 2026/27 offen (bisher DF1)",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "wrc",
@@ -70,7 +75,8 @@
       ],
       "tv": "Rally.TV (Stream); Rally.TV-Gratiskanal bei Zattoo (v. a. Highlights, ausgewählte Live-Inhalte)",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "w2rc",
@@ -82,7 +88,8 @@
       "quellen": [
         "https://www.worldrallyraidchampionship.com/en/"
       ],
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "dakar",
@@ -93,7 +100,8 @@
       ],
       "tv": "Eurosport / HBO Max",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "dtm",
@@ -104,7 +112,8 @@
       ],
       "tv": "Rennen live ProSieben + Joyn; Trainings & Qualifyings im Joyn FAN TV",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "gtm",
@@ -115,7 +124,8 @@
       ],
       "tv": "Alle Rennen live bei Joyn, SPORT1.de, ServusTV On und YouTube (ADAC Motorsports); Sonntagsrennen meist live bei SPORT1 (Free-TV); Qualifying nur YouTube",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "pccd",
@@ -132,7 +142,8 @@
         "https://racing.porsche.com/series/carrera-cup-deutschland",
         "https://newsroom.porsche.com/de/motorsport.html"
       ],
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "gtwc",
@@ -147,7 +158,8 @@
       "quellen": [
         "https://www.gt-world-challenge.com/calendar"
       ],
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "stream_de": ""
     },
     {
       "id": "igtc",
@@ -163,7 +175,8 @@
       "quellen": [
         "https://www.intercontinentalgtchallenge.com/calendar"
       ],
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "stream_de": ""
     },
     {
       "id": "sro",
@@ -172,7 +185,8 @@
       "mt": [],
       "tv": "wird je Event recherchiert",
       "tv_stand": "ungeprüft",
-      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g",
+      "stream_de": ""
     },
     {
       "id": "alms",
@@ -187,7 +201,8 @@
       "quellen": [
         "https://www.asianlemansseries.com"
       ],
-      "youtube": "https://www.youtube.com/c/AsianLeMansSeries"
+      "youtube": "https://www.youtube.com/c/AsianLeMansSeries",
+      "stream_de": ""
     },
     {
       "id": "supergt",
@@ -198,7 +213,8 @@
       ],
       "tv": "wird je Event recherchiert",
       "tv_stand": "ungeprüft",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "supercars",
@@ -209,7 +225,8 @@
       ],
       "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig); kein deutscher TV-Sender bekannt",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "24hseries",
@@ -223,7 +240,8 @@
       "quellen": [
         "https://www.24hseries.com"
       ],
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "nls",
@@ -235,7 +253,8 @@
       ],
       "tv": "Livestream (offizieller NLS-YouTube-Kanal)",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "24hn",
@@ -246,7 +265,8 @@
       ],
       "tv": "NITRO (komplettes Rennen live, Free-TV), RTL+ und YouTube-Livestream",
       "tv_stand": "2026-11",
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     },
     {
       "id": "gtopen",
@@ -258,7 +278,8 @@
       "quellen": [
         "https://gtopen.gtsport.es"
       ],
-      "youtube": ""
+      "youtube": "",
+      "stream_de": ""
     }
   ]
 }
