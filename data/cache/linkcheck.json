@@ -2,56 +2,56 @@
   "https://plus.rtl.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://rally.tv": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.df1.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.discoveryplus.com/de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.disneyplus.com/de-de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.joyn.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.motorvision.tv": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.sky.de/sport/formel-1": {
     "status": "ok-geschützt",
     "code": 403,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.wowtv.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.youtube.com/c/AsianLeMansSeries": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   },
   "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T09:59Z"
+    "geprueft": "2026-11-20T10:01Z"
   }
 }
