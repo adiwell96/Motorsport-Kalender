@@ -393,15 +393,20 @@
       "mt": [
         "24h Dubai"
       ],
-      "tv": "Livestream 24H Series (YouTube)",
-      "tv_stand": "ungeprüft",
+      "tv": "Motorsport Television DE (YouTube, deutscher Kommentar, oft) – sonst 24H Series YouTube (international)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "quellen": [
         "https://www.24hseries.com"
       ],
       "youtube": "https://www.youtube.com/user/24HSeries",
       "links": [
         {
-          "name": "24H Series (YouTube)",
+          "name": "Motorsport Television DE (YouTube, deutscher Kommentar)",
+          "url": "https://www.youtube.com/@MotorsportTelevisionDE/streams",
+          "sprache": "de"
+        },
+        {
+          "name": "24H Series (YouTube, international)",
           "url": "https://www.youtube.com/user/24HSeries"
         }
       ]
