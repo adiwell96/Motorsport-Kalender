@@ -74,6 +74,11 @@
     "code": 200,
     "geprueft": "2026-11-20T10:29Z"
   },
+  "https://www.youtube.com/@GTWorld": {
+    "status": "ok",
+    "code": 200,
+    "geprueft": "2026-11-20T10:29Z"
+  },
   "https://www.youtube.com/@MotorsportTelevisionDE/featured": {
     "status": "ok",
     "code": 200,
@@ -95,11 +100,6 @@
     "geprueft": "2026-11-20T10:29Z"
   },
   "https://www.youtube.com/c/WorldRally-RaidChampionship": {
-    "status": "ok",
-    "code": 200,
-    "geprueft": "2026-11-20T10:29Z"
-  },
-  "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g": {
     "status": "ok",
     "code": 200,
     "geprueft": "2026-11-20T10:29Z"
