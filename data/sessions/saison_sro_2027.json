@@ -1,0 +1,76 @@
+{
+  "series": "sro",
+  "source": "https://www.britishgt.com/news/1264/2027-snetterton-and-silverstone-british-gt-dates-revised",
+  "weekends": [
+    {
+      "event": "British GT – Snetterton 300",
+      "location": "Snetterton, Großbritannien",
+      "from": "2027-04-10",
+      "to": "2027-04-11",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "British GT – Oulton Park",
+      "location": "Oulton Park, Großbritannien",
+      "from": "2027-05-29",
+      "to": "2027-05-31",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "Japan Cup – Motegi",
+      "location": "Mobility Resort Motegi, Japan",
+      "from": "2027-05-15",
+      "to": "2027-05-16",
+      "note": "Quelle: https://www.gt-world-challenge-asia.com/news/1006/suzukas-2027-japan-cup-date-switches-to-june"
+    },
+    {
+      "event": "Japan Cup – Suzuka",
+      "location": "Suzuka, Japan",
+      "from": "2027-06-12",
+      "to": "2027-06-13",
+      "note": "Quelle: https://www.gt-world-challenge-asia.com/news/1006/suzukas-2027-japan-cup-date-switches-to-june"
+    },
+    {
+      "event": "British GT – Spa Speedweek",
+      "location": "Spa-Francorchamps, Belgien",
+      "from": "2027-06-19",
+      "to": "2027-06-20",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "Japan Cup – Fuji (mit GTWC Asia)",
+      "location": "Fuji Speedway, Japan",
+      "from": "2027-07-10",
+      "to": "2027-07-11",
+      "note": "Quelle: https://www.gt-world-challenge-asia.com/news/1006/suzukas-2027-japan-cup-date-switches-to-june"
+    },
+    {
+      "event": "British GT – Silverstone 500",
+      "location": "Silverstone, Großbritannien",
+      "from": "2027-08-07",
+      "to": "2027-08-08",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "Japan Cup – Okayama",
+      "location": "Okayama International Circuit, Japan",
+      "from": "2027-08-07",
+      "to": "2027-08-08",
+      "note": "Quelle: https://www.gt-world-challenge-asia.com/news/1006/suzukas-2027-japan-cup-date-switches-to-june"
+    },
+    {
+      "event": "British GT – Brands Hatch",
+      "location": "Brands Hatch, Großbritannien",
+      "from": "2027-09-11",
+      "to": "2027-09-12",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "British GT – Donington Park",
+      "location": "Donington Park, Großbritannien",
+      "from": "2027-10-16",
+      "to": "2027-10-17",
+      "note": "vorläufiger Zeitplan; Saisonfinale"
+    }
+  ]
+}

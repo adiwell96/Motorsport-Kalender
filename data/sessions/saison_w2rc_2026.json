@@ -1,0 +1,13 @@
+{
+  "series": "w2rc",
+  "source": "https://www.worldrallyraidchampionship.com/en/calendar",
+  "weekends": [
+    {
+      "event": "Abu Dhabi Desert Challenge",
+      "location": "Vereinigte Arabische Emirate",
+      "from": "2026-11-22",
+      "to": "2026-11-27",
+      "note": "Saisonfinale"
+    }
+  ]
+}

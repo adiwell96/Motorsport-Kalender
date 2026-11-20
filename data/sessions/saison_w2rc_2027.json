@@ -1,0 +1,37 @@
+{
+  "series": "w2rc",
+  "source": "https://www.worldrallyraidchampionship.com/en/calendar",
+  "weekends": [
+    {
+      "event": "Rallye Dakar 2027",
+      "location": "Portugal / Marokko (Start Loulé/Faro, Ziel Marrakesch)",
+      "from": "2027-01-09",
+      "to": "2027-01-23"
+    },
+    {
+      "event": "Abu Dhabi Desert Challenge",
+      "location": "Vereinigte Arabische Emirate",
+      "from": "2027-03-21",
+      "to": "2027-03-26"
+    },
+    {
+      "event": "South African Safari Rally",
+      "location": "Südafrika",
+      "from": "2027-06-14",
+      "to": "2027-06-19"
+    },
+    {
+      "event": "Rally-Raid Portugal",
+      "location": "Portugal / Spanien",
+      "from": "2027-09-21",
+      "to": "2027-09-26"
+    },
+    {
+      "event": "Rallye du Maroc",
+      "location": "Marokko",
+      "from": "2027-10-24",
+      "to": "2027-10-29",
+      "note": "Saisonfinale"
+    }
+  ]
+}

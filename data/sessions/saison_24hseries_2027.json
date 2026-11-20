@@ -2,11 +2,47 @@
   "series": "24hseries",
   "source": "https://www.24hseries.com/races",
   "weekends": [
-    {"event": "Michelin 24H Kyalami", "location": "Kyalami Grand Prix Circuit, Südafrika", "from": "2027-01-08", "to": "2027-01-10"},
-    {"event": "Michelin 12H Mugello", "location": "Mugello Circuit, Italien", "from": "2027-03-19", "to": "2027-03-21"},
-    {"event": "Michelin 12H Spa-Francorchamps", "location": "Circuit de Spa-Francorchamps, Belgien", "from": "2027-04-09", "to": "2027-04-11"},
-    {"event": "Michelin 12H Red Bull Ring", "location": "Red Bull Ring, Österreich", "from": "2027-05-14", "to": "2027-05-16"},
-    {"event": "Michelin 12H Paul Ricard", "location": "Circuit Paul Ricard, Frankreich", "from": "2027-06-04", "to": "2027-06-06"},
-    {"event": "Michelin 24H Barcelona", "location": "Circuit de Barcelona-Catalunya, Spanien", "from": "2027-09-10", "to": "2027-09-12"}
+    {
+      "event": "24H Kyalami",
+      "location": "Kyalami Grand Prix Circuit, Südafrika",
+      "from": "2027-01-08",
+      "to": "2027-01-10",
+      "note": "ersetzt das 24h Dubai 2027"
+    },
+    {
+      "event": "12H Mugello",
+      "location": "Mugello, Italien",
+      "from": "2027-03-19",
+      "to": "2027-03-21",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "12H Spa-Francorchamps",
+      "location": "Spa-Francorchamps, Belgien",
+      "from": "2027-04-09",
+      "to": "2027-04-11",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "12H Red Bull Ring",
+      "location": "Spielberg, Österreich",
+      "from": "2027-05-14",
+      "to": "2027-05-16",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "12H Paul Ricard",
+      "location": "Le Castellet, Frankreich",
+      "from": "2027-06-04",
+      "to": "2027-06-06",
+      "note": "vorläufiger Zeitplan"
+    },
+    {
+      "event": "24H Barcelona",
+      "location": "Circuit de Barcelona-Catalunya, Spanien",
+      "from": "2027-09-10",
+      "to": "2027-09-12",
+      "note": "vorläufiger Zeitplan"
+    }
   ]
 }
