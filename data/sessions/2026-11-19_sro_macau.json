@@ -3,14 +3,38 @@
   "event": "FIA GT World Cup Macau",
   "location": "Circuito da Guia, Macau",
   "timezone": "Europe/Berlin",
-  "tv": "Livestream Macau Grand Prix (YouTube @GrandePremiodeMacau) bzw. FIA-Stream",
-  "source": "https://www.speedweek.com/a/sportwagen/fia-gt-world-cup-macau-livestream",
+  "tv": "FIA YouTube (FIAOfficialVideo): alle Qualifyings und Rennen live und kostenlos",
+  "source": "https://www.speedweek.com/a/sportwagen/fia-gt-world-cup-macau-livestream ; Übertragung: https://www.fia.com/news/fia-world-cups-take-centre-stage-iconic-macau-grand-prix",
   "sessions": [
-    {"name": "1. Training", "start": "2026-11-19T05:15", "end": "2026-11-19T05:45"},
-    {"name": "2. Training", "start": "2026-11-19T08:15", "end": "2026-11-19T08:45"},
-    {"name": "Qualifying 1", "start": "2026-11-20T08:50", "end": "2026-11-20T09:20"},
-    {"name": "Qualifying 2", "start": "2026-11-20T09:40", "end": "2026-11-20T10:05"},
-    {"name": "Qualifikationsrennen (12 Runden)", "start": "2026-11-21T07:35", "end": "2026-11-21T08:40"},
-    {"name": "Hauptrennen (16 Runden)", "start": "2026-11-22T05:35", "end": "2026-11-22T06:50"}
+    {
+      "name": "1. Training",
+      "start": "2026-11-19T05:15",
+      "end": "2026-11-19T05:45"
+    },
+    {
+      "name": "2. Training",
+      "start": "2026-11-19T08:15",
+      "end": "2026-11-19T08:45"
+    },
+    {
+      "name": "Qualifying 1",
+      "start": "2026-11-20T08:50",
+      "end": "2026-11-20T09:20"
+    },
+    {
+      "name": "Qualifying 2",
+      "start": "2026-11-20T09:40",
+      "end": "2026-11-20T10:05"
+    },
+    {
+      "name": "Qualifikationsrennen (12 Runden)",
+      "start": "2026-11-21T07:35",
+      "end": "2026-11-21T08:40"
+    },
+    {
+      "name": "Hauptrennen (16 Runden)",
+      "start": "2026-11-22T05:35",
+      "end": "2026-11-22T06:50"
+    }
   ]
 }

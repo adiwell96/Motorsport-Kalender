@@ -66,7 +66,7 @@
       ],
       "tv": "discovery+ (alle Rennen live, deutsch); Eurosport",
       "tv_stand": "2026-11 (Nutzerangabe)",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/fiawec",
       "links": [
         {
           "name": "discovery+",
@@ -146,7 +146,7 @@
       "quellen": [
         "https://www.worldrallyraidchampionship.com/en/"
       ],
-      "youtube": "",
+      "youtube": "https://www.youtube.com/c/WorldRally-RaidChampionship",
       "links": []
     },
     {
@@ -194,7 +194,7 @@
       ],
       "tv": "Alle Rennen live bei Joyn, SPORT1.de, ServusTV On und YouTube (ADAC Motorsports); Sonntagsrennen meist live bei SPORT1 (Free-TV); Qualifying nur YouTube",
       "tv_stand": "2026-11",
-      "youtube": "",
+      "youtube": "https://youtube.com/ADACMotorsports",
       "links": []
     },
     {
@@ -295,7 +295,7 @@
       ],
       "tv": "wird je Event recherchiert",
       "tv_stand": "ungeprüft",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/user/supergtmovie",
       "links": []
     },
     {
@@ -307,7 +307,7 @@
       ],
       "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig); kein deutscher TV-Sender bekannt",
       "tv_stand": "2026-11",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/@SupercarsChampionship",
       "links": []
     },
     {
@@ -322,7 +322,7 @@
       "quellen": [
         "https://www.24hseries.com"
       ],
-      "youtube": "",
+      "youtube": "https://www.youtube.com/user/24HSeries",
       "links": []
     },
     {
@@ -335,7 +335,7 @@
       ],
       "tv": "Livestream (offizieller NLS-YouTube-Kanal)",
       "tv_stand": "2026-11",
-      "youtube": "",
+      "youtube": "https://www.youtube.com/c/VLNOFFICIAL",
       "links": []
     },
     {
@@ -366,7 +366,7 @@
       "quellen": [
         "https://gtopen.gtsport.es"
       ],
-      "youtube": "",
+      "youtube": "https://www.youtube.com/@GTOPENseries",
       "links": []
     }
   ]
