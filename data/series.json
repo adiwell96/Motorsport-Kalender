@@ -475,6 +475,31 @@
         "Sprint",
         "Endurance"
       ]
+    },
+    {
+      "id": "tcr",
+      "name": "FIA TCR World Tour",
+      "kurz": "TCR",
+      "mt": [
+        "TCR World Tour"
+      ],
+      "tv": "Motorsport Television DE (YouTube, deutscher Kommentar, oft) – international TCR TV (YouTube)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "https://www.youtube.com/@TCRTV",
+      "quellen": [
+        "https://www.fiatcrworldtour.com/events"
+      ],
+      "links": [
+        {
+          "name": "Motorsport Television DE (YouTube)",
+          "url": "https://www.youtube.com/@MotorsportTelevisionDE/featured",
+          "sprache": "de"
+        },
+        {
+          "name": "TCR TV (YouTube, international)",
+          "url": "https://www.youtube.com/@TCRTV"
+        }
+      ]
     }
   ]
 }
