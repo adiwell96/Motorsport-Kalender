@@ -364,10 +364,14 @@
       "mt": [
         "Supercars"
       ],
-      "tv": "SportDigital (Partner für Deutschland/Österreich/Schweiz laut supercars.com); international SuperView (offizieller Stream, kostenpflichtig)",
-      "tv_stand": "2026-11",
-      "youtube": "",
+      "tv": "SportDigital (Partner für Deutschland/Österreich/Schweiz laut supercars.com); international SuperView (offizieller Stream, kostenpflichtig); Supercars YouTube-Kanal",
+      "tv_stand": "2026-11 (Nutzerangabe)",
+      "youtube": "https://www.youtube.com/@supercars",
       "links": [
+        {
+          "name": "Supercars (YouTube)",
+          "url": "https://www.youtube.com/@supercars"
+        },
         {
           "name": "SportDigital",
           "url": "https://start.sportdigital.de/",
