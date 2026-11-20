@@ -1,0 +1,62 @@
+{
+  "series": "gtopen",
+  "source": "https://gtopen.gtsport.es/blog/2027-gt-open-provisional-calendar-announced",
+  "weekends": [
+    {
+      "event": "Runde 1: Portimão",
+      "location": "Autódromo Internacional do Algarve, Portugal",
+      "from": "2027-04-11",
+      "to": "2027-04-11",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 2: Spa-Francorchamps (GT Open 500)",
+      "location": "Circuit de Spa-Francorchamps, Belgien",
+      "from": "2027-05-02",
+      "to": "2027-05-02",
+      "note": "Endurance-Format: ein Rennen über 500 km. Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 3: Silverstone",
+      "location": "Silverstone GP Circuit, Großbritannien",
+      "from": "2027-05-16",
+      "to": "2027-05-16",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 4: Hockenheimring",
+      "location": "Hockenheimring, Deutschland",
+      "from": "2027-06-13",
+      "to": "2027-06-13",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 5: Hungaroring",
+      "location": "Hungaroring, Ungarn",
+      "from": "2027-07-04",
+      "to": "2027-07-04",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 6: Paul Ricard",
+      "location": "Circuit Paul Ricard, Frankreich",
+      "from": "2027-07-18",
+      "to": "2027-07-18",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 7: Monza (GT Open 500)",
+      "location": "Autodromo Nazionale di Monza, Italien",
+      "from": "2027-09-19",
+      "to": "2027-09-19",
+      "note": "Endurance-Format: ein Rennen über 500 km. Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    },
+    {
+      "event": "Runde 8: Barcelona",
+      "location": "Circuit de Barcelona-Catalunya, Spanien",
+      "from": "2027-10-10",
+      "to": "2027-10-10",
+      "note": "Vorläufiger Kalender; Datum = Renntag laut Veranstalter, das komplette Wochenende folgt mit dem Zeitplan."
+    }
+  ]
+}
