@@ -1,0 +1,8 @@
+{
+  "_info": "Vorlage für die Saison-Übersicht von Serien ohne Wochenend-Feed (w2rc, gtopen, 24hseries, sro). Dateiname: saison_<serie>_<jahr>.json. Erzeugt ganztägige Wochenend-Termine.",
+  "series": "gtopen",
+  "source": "https://gtopen.gtsport.es",
+  "weekends": [
+    {"event": "Portimão", "location": "Autódromo Internacional do Algarve", "from": "2027-04-23", "to": "2027-04-25"}
+  ]
+}

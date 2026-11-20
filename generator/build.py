@@ -239,6 +239,16 @@ def from_session_files(series: dict) -> list[Event]:
             if sid not in series:
                 warn(f"{path.name}: unbekannte Serie '{sid}'")
                 continue
+            for w in doc.get("weekends", []):  # Saison-Übersicht (ganztägig)
+                d_from = date.fromisoformat(w["from"])
+                d_to = date.fromisoformat(w.get("to", w["from"]))
+                out.append(Event(sid, w["event"], d_from, d_to + timedelta(days=1),
+                                 location=w.get("location", ""), tv=w.get("tv", ""),
+                                 note=w.get("note", ""), url=doc.get("source", ""),
+                                 kind="weekend",
+                                 uid_key=f"wk|{sid}|{w['event']}|{d_from}"))
+            if "sessions" not in doc:
+                continue
             tz = ZoneInfo(doc.get("timezone", "Europe/Berlin"))
             event_name = doc["event"]
             for s in doc["sessions"]:

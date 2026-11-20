@@ -11,7 +11,8 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
    Vergiss dabei nicht die Serien ohne Wochenend-Feed: `w2rc`, `gtopen`, `sro`
    (GT3-Serien von SRO außerhalb von GTWC/IGTC, z. B. British GT) sowie
    `24hseries`-Läufe außer Dubai.
-3. Für jedes Wochenende: Hole den **offiziellen Zeitplan** (Website der Serie oder
+3. Für jedes Wochenende: Hole den **offiziellen Zeitplan**. Hat die Serie in
+   `data/series.json` ein Feld `quellen`, nutze diese Seiten zuerst. Sonst die Website der Serie oder
    des Veranstalters; nur wenn nicht vorhanden, eine seriöse Fachquelle).
    Wichtig sind Trainings, Qualifyings, Rennen und Etappen. Nebenserien lässt du weg.
 4. Recherchiere, **wo die Sessions in Deutschland laufen** (TV-Sender, Stream,
@@ -27,10 +28,15 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
    `data/tv_overrides.json` ein (z. B. `{"series":"f1","from":"2027-03-05","to":"2027-03-07","tv":"Sky Sport F1 / WOW; Rennen auch live bei RTL"}`).
 7. Wenn sich die Standard-Übertragung einer Serie geändert hat, passe `tv` und
    `tv_stand` in `data/series.json` an.
-8. Lösche Session-Dateien, deren Wochenende mehr als 120 Tage zurückliegt.
-9. Prüfe mit `python generator/build.py --offline`, dass keine Warnung zu einer
+8. **Saison-Übersicht** für die Serien ohne Wochenend-Feed (`w2rc`, `gtopen`,
+   `24hseries`, `sro`): Pflege je Serie und Jahr eine Datei
+   `data/sessions/saison_<serie>_<jahr>.json` mit allen Rennwochenenden der
+   laufenden und, sobald veröffentlicht, der nächsten Saison (Muster:
+   `data/sessions/_beispiel_saison.json`). Quelle: die Seiten unter `quellen`.
+9. Lösche Session-Dateien, deren Wochenende mehr als 120 Tage zurückliegt.
+10. Prüfe mit `python generator/build.py --offline`, dass keine Warnung zu einer
    Session-Datei ausgegeben wird. Behebe Fehler.
-10. Committe mit der Nachricht `Zeitpläne aktualisiert (KW xx)` und pushe auf `main`.
+11. Committe mit der Nachricht `Zeitpläne aktualisiert (KW xx)` und pushe auf `main`.
 
 ## Regeln
 
