@@ -141,13 +141,23 @@
       "name": "World Rally-Raid Championship (W2RC)",
       "kurz": "W2RC",
       "mt": [],
-      "tv": "Eurosport / HBO Max (Highlights) – wird je Event recherchiert",
-      "tv_stand": "ungeprüft",
+      "tv": "Kein Live-Rennen: tägliche Zusammenfassungen bei discovery+ / Eurosport und auf YouTube (PITWALK)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "quellen": [
         "https://www.worldrallyraidchampionship.com/en/"
       ],
       "youtube": "https://www.youtube.com/c/WorldRally-RaidChampionship",
       "links": [
+        {
+          "name": "discovery+ / Eurosport (tägliche Zusammenfassung)",
+          "url": "https://www.discoveryplus.com/de/de",
+          "sprache": "de"
+        },
+        {
+          "name": "PITWALK (YouTube, tägliche Zusammenfassung, deutsch)",
+          "url": "https://www.youtube.com/@PITWALK",
+          "sprache": "de"
+        },
         {
           "name": "discovery+ (Eurosport)",
           "url": "https://www.discoveryplus.com/de",
@@ -166,13 +176,18 @@
       "mt": [
         "Rallye Dakar"
       ],
-      "tv": "Eurosport / HBO Max",
-      "tv_stand": "2026-11",
+      "tv": "Kein Live-Rennen: tägliche Zusammenfassungen bei discovery+ / Eurosport und auf YouTube (PITWALK)",
+      "tv_stand": "2026-11 (Nutzerangabe)",
       "youtube": "",
       "links": [
         {
-          "name": "discovery+",
+          "name": "discovery+ / Eurosport (tägliche Zusammenfassung)",
           "url": "https://www.discoveryplus.com/de/de",
+          "sprache": "de"
+        },
+        {
+          "name": "PITWALK (YouTube, tägliche Zusammenfassung, deutsch)",
+          "url": "https://www.youtube.com/@PITWALK",
           "sprache": "de"
         }
       ]
