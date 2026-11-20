@@ -1,5 +1,5 @@
 {
-  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt.",
+  "_info": "Rennserien des Kalenders. 'mt' = Serienname im Motorsport-Total-Feed (Teil vor dem Doppelpunkt). 'tv' = Standard-Übertragung in Deutschland. 'tv_stand' = wann die Angabe zuletzt geprüft wurde. 'quellen' = offizielle Seiten, die die Recherche zuerst nutzt. 'youtube' = offizieller YouTube-Kanal (leer = keiner bekannt/kein Livestream in DE).",
   "series": [
     {
       "id": "f1",
@@ -9,7 +9,8 @@
         "Formel 1"
       ],
       "tv": "Sky Sport F1 / WOW (alle Sessions); ausgewählte Rennen zusätzlich live bei RTL",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "supercup",
@@ -23,7 +24,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://racing.porsche.com/de-DE/series/mobil-1-supercup"
-      ]
+      ],
+      "youtube": ""
     },
     {
       "id": "wec",
@@ -34,7 +36,8 @@
         "24h Le Mans"
       ],
       "tv": "Eurosport / HBO Max",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "imsa",
@@ -44,7 +47,8 @@
         "IMSA"
       ],
       "tv": "IMSA.tv / YouTube (Livestream)",
-      "tv_stand": "ungeprüft"
+      "tv_stand": "ungeprüft",
+      "youtube": ""
     },
     {
       "id": "fe",
@@ -54,7 +58,8 @@
         "Formel E"
       ],
       "tv": "Disney+ (alle Sessions); Free-TV-Partner für 2026/27 offen (bisher DF1)",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "wrc",
@@ -64,7 +69,8 @@
         "Rallye-WM"
       ],
       "tv": "Rally.TV (Stream); Rally.TV-Gratiskanal bei Zattoo (v. a. Highlights, ausgewählte Live-Inhalte)",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "w2rc",
@@ -75,7 +81,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://www.worldrallyraidchampionship.com/en/"
-      ]
+      ],
+      "youtube": ""
     },
     {
       "id": "dakar",
@@ -85,7 +92,8 @@
         "Rallye Dakar"
       ],
       "tv": "Eurosport / HBO Max",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "dtm",
@@ -95,7 +103,8 @@
         "DTM"
       ],
       "tv": "Rennen live ProSieben + Joyn; Trainings & Qualifyings im Joyn FAN TV",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "gtm",
@@ -105,7 +114,8 @@
         "ADAC GT Masters"
       ],
       "tv": "Alle Rennen live bei Joyn, SPORT1.de, ServusTV On und YouTube (ADAC Motorsports); Sonntagsrennen meist live bei SPORT1 (Free-TV); Qualifying nur YouTube",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "pccd",
@@ -121,7 +131,8 @@
         "https://racing.porsche.com/de-DE/articles/carerra-cup-deutschland-2026-hockenheimring-vorschau",
         "https://racing.porsche.com/series/carrera-cup-deutschland",
         "https://newsroom.porsche.com/de/motorsport.html"
-      ]
+      ],
+      "youtube": ""
     },
     {
       "id": "gtwc",
@@ -135,7 +146,8 @@
       "tv_stand": "2026-11",
       "quellen": [
         "https://www.gt-world-challenge.com/calendar"
-      ]
+      ],
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
     },
     {
       "id": "igtc",
@@ -150,7 +162,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://www.intercontinentalgtchallenge.com/calendar"
-      ]
+      ],
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
     },
     {
       "id": "sro",
@@ -158,7 +171,8 @@
       "kurz": "SRO GT3",
       "mt": [],
       "tv": "wird je Event recherchiert",
-      "tv_stand": "ungeprüft"
+      "tv_stand": "ungeprüft",
+      "youtube": "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g"
     },
     {
       "id": "alms",
@@ -172,7 +186,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://www.asianlemansseries.com"
-      ]
+      ],
+      "youtube": "https://www.youtube.com/c/AsianLeMansSeries"
     },
     {
       "id": "supergt",
@@ -182,7 +197,8 @@
         "Super GT"
       ],
       "tv": "wird je Event recherchiert",
-      "tv_stand": "ungeprüft"
+      "tv_stand": "ungeprüft",
+      "youtube": ""
     },
     {
       "id": "supercars",
@@ -192,7 +208,8 @@
         "Supercars"
       ],
       "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig); kein deutscher TV-Sender bekannt",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "24hseries",
@@ -205,7 +222,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://www.24hseries.com"
-      ]
+      ],
+      "youtube": ""
     },
     {
       "id": "nls",
@@ -216,7 +234,8 @@
         "NLS"
       ],
       "tv": "Livestream (offizieller NLS-YouTube-Kanal)",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "24hn",
@@ -226,7 +245,8 @@
         "24h Nürburgring"
       ],
       "tv": "NITRO (komplettes Rennen live, Free-TV), RTL+ und YouTube-Livestream",
-      "tv_stand": "2026-11"
+      "tv_stand": "2026-11",
+      "youtube": ""
     },
     {
       "id": "gtopen",
@@ -237,7 +257,8 @@
       "tv_stand": "ungeprüft",
       "quellen": [
         "https://gtopen.gtsport.es"
-      ]
+      ],
+      "youtube": ""
     }
   ]
 }

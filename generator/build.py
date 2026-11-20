@@ -110,8 +110,9 @@ def ics_time(value: str, params: dict) -> date | datetime:
 class Event:
     def __init__(self, series: str, title: str, start, end, *, location: str = "",
                  tv: str = "", note: str = "", url: str = "", uid_key: str = "",
-                 kind: str = "session"):
+                 kind: str = "session", stream: str = ""):
         self.series, self.title, self.start, self.end = series, title, start, end
+        self.stream = stream  # direkter Livestream-Link (z. B. YouTube-Video)
         self.location, self.tv, self.note, self.url = location, tv, note, url
         self.kind = kind  # "weekend" (ganztägig) oder "session"
         key = uid_key or f"{series}|{title}|{start}"
@@ -245,7 +246,7 @@ def from_session_files(series: dict) -> list[Event]:
                 out.append(Event(sid, w["event"], d_from, d_to + timedelta(days=1),
                                  location=w.get("location", ""), tv=w.get("tv", ""),
                                  note=w.get("note", ""), url=doc.get("source", ""),
-                                 kind="weekend",
+                                 kind="weekend", stream=w.get("stream", ""),
                                  uid_key=f"wk|{sid}|{w['event']}|{d_from}"))
             if "sessions" not in doc:
                 continue
@@ -261,6 +262,7 @@ def from_session_files(series: dict) -> list[Event]:
                                  location=doc.get("location", ""),
                                  tv=s.get("tv") or doc.get("tv", ""),
                                  note=s.get("note", ""), url=doc.get("source", ""),
+                                 stream=s.get("stream") or doc.get("stream", ""),
                                  uid_key=f"file|{sid}|{event_name}|{s['name']}|{start.date()}"))
         except Exception as e:  # noqa: BLE001
             warn(f"{path.name} fehlerhaft: {e}")
@@ -290,7 +292,8 @@ def apply_tv(events: list[Event], series: dict, overrides: list[dict]) -> None:
                 d_to = date.fromisoformat(o.get("to", o["from"]))
                 if ev.day() <= d_to and ev.last_day() >= d_from:
                     if not o.get("session") or o["session"].lower() in ev.title.lower():
-                        ev.tv = o["tv"]
+                        ev.tv = o.get("tv", "")
+                        ev.stream = ev.stream or o.get("stream", "")
                         break
         if not ev.tv:
             ev.tv = series[ev.series]["tv"]
@@ -357,10 +360,16 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
         else:
             desc.append("Rennwochenende – genaue Session-Zeiten folgen als eigene Termine, "
                         "sobald veröffentlicht.")
+        channel = s.get("youtube", "")
+        if ev.stream:
+            desc.append(f"▶️ Livestream: {ev.stream}")
+        if channel and channel != ev.stream:
+            desc.append(f"▶️ YouTube-Kanal: {channel}")
         if ev.note:
             desc.append(ev.note)
         if ev.url:
             desc.append(f"Quelle: {ev.url}")
+        link = ev.stream or channel or ev.url
         L += ["BEGIN:VEVENT", f"UID:{ev.uid}", f"DTSTAMP:{stamp}"]
         if ev.all_day:
             L += [f"DTSTART;VALUE=DATE:{fmt(ev.start)}", f"DTEND;VALUE=DATE:{fmt(ev.end)}",
@@ -371,8 +380,8 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
               f"CATEGORIES:{esc(s['name'])}"]
         if ev.location:
             L.append(f"LOCATION:{esc(ev.location)}")
-        if ev.url:
-            L.append(f"URL:{ev.url}")
+        if link:
+            L.append(f"URL:{link}")
         L.append("END:VEVENT")
     L.append("END:VCALENDAR")
     return "\r\n".join(fold(x) for x in L) + "\r\n"

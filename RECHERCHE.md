@@ -18,6 +18,16 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
 4. Recherchiere, **wo die Sessions in Deutschland laufen** (TV-Sender, Stream,
    Free-TV oder Pay-TV). Sei konkret pro Session, falls es Unterschiede gibt
    (z. B. F1: Sky für alles, RTL nur für bestimmte Rennen).
+4a. **YouTube-Abgleich:** Prüfe auf dem offiziellen YouTube-Kanal der Serie (Feld
+   `youtube` in `data/series.json`), ob für die Sessions Livestreams angekündigt
+   sind (Tab „Live“ bzw. geplante Streams). Trage den direkten Link zum Stream
+   pro Session im Feld `stream` ein (Format `https://www.youtube.com/watch?v=…`).
+   Prüfe dabei, ob der Stream in Deutschland verfügbar ist (Hinweise auf
+   Geo-Sperren beachten); ist er gesperrt, keinen Link eintragen und das in
+   `note` vermerken. Ist bei einer Serie das Feld `youtube` leer, ermittle den
+   offiziellen Kanal (verlinkt auf der Website der Serie) und trage ihn ein.
+   Prüfe bereits eingetragene Stream-Links erneut und korrigiere sie, wenn sich
+   der Link geändert hat. Bei Formel 1 entfällt das (kein YouTube-Livestream).
 5. Schreibe pro Wochenende eine Datei `data/sessions/JJJJ-MM-TT_<serie>_<ort>.json`
    nach dem Muster von `data/sessions/_beispiel.json`. Gib die Zeiten in der
    Ortszeit der Strecke an und setze `timezone` passend (IANA-Name), oder gib sie
