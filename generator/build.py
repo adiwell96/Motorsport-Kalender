@@ -114,6 +114,7 @@ class Event:
         self.series, self.title, self.start, self.end = series, title, start, end
         self.region = region  # z. B. Europe / America / Asia / Australia
         self.links: list[dict] = []  # [{"name", "url", "sprache"}], deutsche zuerst
+        self.also: list[str] = []  # weitere Serien, zu denen dieser Termin zählt
         self.stream = stream  # direkter Livestream-Link (z. B. YouTube-Video)
         self.location, self.tv, self.note, self.url = location, tv, note, url
         self.kind = kind  # "weekend" (ganztägig) oder "session"
@@ -401,6 +402,49 @@ def check_links(series: dict) -> dict:
     return result
 
 
+STOP = {"rennen", "runde", "race", "mit", "vorläufig", "deutschland", "belgien", "japan", "usa",
+        "hours", "hour", "stunden", "rallye", "rally", "training", "qualifying", "series", "challenge"}
+
+
+ALIAS = {"austin": "cota", "texas": "cota", "americas": "cota", "spielberg": "redbullring",
+         "francorchamps": "spa", "nordschleife": "nürburgring", "marrakesch": "dakar"}
+
+
+def _words(ev: Event) -> set[str]:
+    words = set(re.findall(r"[a-zäöüß]{3,}", f"{ev.title} {ev.location}".lower())) - STOP
+    return {ALIAS.get(w, w) for w in words}
+
+
+def _overlap(a: Event, b: Event) -> bool:
+    if a.kind != b.kind:
+        return False
+    if a.kind == "session":
+        return a.start == b.start
+    return a.day() <= b.last_day() and b.day() <= a.last_day()
+
+
+def merge_shared(events: list[Event], series: dict) -> list[Event]:
+    """Legt Rennen zusammen, die zu zwei Serien zählen (siehe data/zusammenlegen.json)."""
+    f = DATA / "zusammenlegen.json"
+    if not f.exists():
+        return events
+    pairs = json.loads(f.read_text(encoding="utf-8")).get("paare", [])
+    drop = set()
+    for p in pairs:
+        mains = [e for e in events if e.series == p["haupt"]]
+        for sec in (e for e in events if e.series == p["zweit"] and id(e) not in drop):
+            for m in mains:
+                if _overlap(m, sec) and (_words(m) & _words(sec) or p["zweit"] == "w2rc"):
+                    if p["zweit"] not in m.also:
+                        m.also.append(p["zweit"])
+                    m.links += sec.links
+                    if not m.stream:
+                        m.stream = sec.stream
+                    drop.add(id(sec))
+                    break
+    return [e for e in events if id(e) not in drop]
+
+
 # --------------------------------------------------------------------------- ICS schreiben
 
 def esc(v: str) -> str:
@@ -439,6 +483,8 @@ def render(cal_name: str, events: list[Event], series: dict, stamp: str) -> str:
         s = series[ev.series]
         prefix = "🏁" if ev.kind == "weekend" else "🏎️"
         label = f"{s['kurz']} {ev.region}" if ev.region else s["kurz"]
+        if ev.also:
+            label += " + " + " + ".join(series[x]["kurz"] for x in ev.also if x in series)
         summary = f"{prefix} {label}: {ev.title}"
         desc = [f"📺 Deutschland: {ev.tv}"]
         if ev.kind == "session":
@@ -515,6 +561,7 @@ def main() -> int:
     events += from_f1_api(offline)
     events += from_session_files(series)
     events = dedupe(events)
+    events = merge_shared(events, series)
     apply_tv(events, series, load_tv_overrides())
 
     cutoff = datetime.now(BERLIN).date() - timedelta(days=KEEP_PAST_DAYS)
@@ -525,7 +572,7 @@ def main() -> int:
     (OUT / "motorsport.ics").write_text(render("Motorsport", events, series, stamp), encoding="utf-8")
     counts = {}
     for sid, s in series.items():
-        sub = [e for e in events if e.series == sid]
+        sub = [e for e in events if e.series == sid or sid in e.also]
         counts[sid] = len(sub)
         (OUT / f"{sid}.ics").write_text(render(f"Motorsport – {s['name']}", sub, series, stamp),
                                         encoding="utf-8")

@@ -66,6 +66,11 @@ Diese Anleitung wird jede Woche automatisch von Claude ausgeführt. Sie hält
 
 ## Regeln
 
+- **Doppelte Rennen:** Zählt ein Rennen zu zwei Serien (z. B. 24h Spa = GTWC + IGTC),
+  trage Zeitplan und Links nur bei der Hauptserie aus `data/zusammenlegen.json` ein.
+  Der Generator legt solche Termine automatisch zusammen. Fällt dir ein neues
+  gemeinsames Rennen auf, ergänze das Serienpaar dort.
+
 - **GT World Challenge:** Setze in jeder `gtwc`-Datei das Feld `"region"` auf
   `Europe`, `America`, `Asia` oder `Australia` (bei Saison-Dateien pro Wochenende).
   Der Eventname enthält dann nur noch die Strecke, z. B. `"event": "Suzuka"`.

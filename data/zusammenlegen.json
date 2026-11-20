@@ -1,0 +1,9 @@
+{
+  "_info": "Rennen, die zu zwei Serien zählen, erscheinen nur einmal. Überschneidet sich ein Termin der Zweitserie zeitlich mit einem der Hauptserie und teilt ein Streckenwort, wird er in den Hauptserien-Termin eingeschmolzen (Titel z. B. 'GTWC Europe + IGTC'). Der Termin erscheint trotzdem in beiden Serien-Kalendern.",
+  "paare": [
+    {"haupt": "gtwc", "zweit": "igtc"},
+    {"haupt": "24hn", "zweit": "igtc"},
+    {"haupt": "supergt", "zweit": "igtc"},
+    {"haupt": "dakar", "zweit": "w2rc"}
+  ]
+}
