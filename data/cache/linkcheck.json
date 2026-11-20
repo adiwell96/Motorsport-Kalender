@@ -2,111 +2,116 @@
   "https://plus.rtl.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://rally.tv": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://start.sportdigital.de/": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.df1.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.discoveryplus.com/de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.disneyplus.com/de-de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.joyn.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.motorvision.tv": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.servustv.com/": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.sky.de/sport/formel-1": {
     "status": "ok-geschützt",
     "code": 403,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.sport1.de/": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.supercars.com/superview": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.wowtv.de": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
+  },
+  "https://www.youtube.com/@ACISportTVofficial": {
+    "status": "ok",
+    "code": 200,
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/@GTOPENseries": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/c/AsianLeMansSeries": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/c/VLNOFFICIAL": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/c/WorldRally-RaidChampionship": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/channel/UC-yHapH6mW1ceZ_5PDUf1_g": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/fiawec": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/user/24HSeries": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://www.youtube.com/user/supergtmovie": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   },
   "https://youtube.com/ADACMotorsports": {
     "status": "ok",
     "code": 200,
-    "geprueft": "2026-11-20T10:09Z"
+    "geprueft": "2026-11-20T10:23Z"
   }
 }
