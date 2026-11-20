@@ -34,7 +34,7 @@
     {"id": "supergt", "name": "Super GT Japan", "kurz": "Super GT", "mt": ["Super GT"],
      "tv": "wird je Event recherchiert", "tv_stand": "ungeprüft"},
     {"id": "supercars", "name": "Supercars Australien", "kurz": "Supercars", "mt": ["Supercars"],
-     "tv": "wird je Event recherchiert", "tv_stand": "ungeprüft"},
+     "tv": "SuperView (offizieller Supercars-Stream, kostenpflichtig); kein deutscher TV-Sender bekannt", "tv_stand": "2026-11"},
     {"id": "24hseries", "name": "24H Series (Creventic)", "kurz": "24H Series", "mt": ["24h Dubai"],
      "tv": "Livestream 24H Series (YouTube)", "tv_stand": "ungeprüft"},
     {"id": "nls", "name": "Nürburgring Langstrecken-Serie (NLS)", "kurz": "NLS", "mt": ["Nürburgring-Langstrecken-Serie", "NLS"],

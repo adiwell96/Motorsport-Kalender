@@ -1,4 +1,12 @@
 {
   "_info": "TV-Angabe für einzelne Wochenenden/Sessions, überschreibt den Serien-Standard. Felder: series, from (JJJJ-MM-TT), to (optional), session (optional, Textteil des Session-Namens), tv.",
-  "overrides": []
+  "overrides": [
+    {"series": "f1", "from": "2026-11-19", "to": "2026-11-22", "session": "Qualifying", "tv": "Sky Sport F1 / WOW; Qualifying auch live bei RTL", "source": "https://f1-insider.com/formel-1-rtl-gute-nachrichten-deutsche-fans-83902/"},
+    {"series": "f1", "from": "2026-11-19", "to": "2026-11-22", "session": "Rennen", "tv": "Sky Sport F1 / WOW; Rennen auch live bei RTL (Free-TV)", "source": "https://f1-insider.com/formel-1-rtl-gute-nachrichten-deutsche-fans-83902/"},
+    {"series": "f1", "from": "2026-11-19", "to": "2026-11-22", "tv": "Sky Sport F1 / WOW (alle Sessions); Qualifying und Rennen auch live bei RTL"},
+    {"series": "f1", "from": "2026-11-27", "to": "2026-11-29", "tv": "Sky Sport F1 / WOW (nur Pay-TV, kein Free-TV)", "source": "https://f1-insider.com/formel-1-rtl-gute-nachrichten-deutsche-fans-83902/"},
+    {"series": "f1", "from": "2026-12-04", "to": "2026-12-06", "session": "Qualifying", "tv": "Sky Sport F1 / WOW; Qualifying auch live bei NITRO (Free-TV)", "source": "https://www.formel1.de/news/news/2026-11-09/ueberraschung-rtl-zeigt-zusaetzliches-formel-1-rennen-2026-im-free-tv"},
+    {"series": "f1", "from": "2026-12-04", "to": "2026-12-06", "session": "Rennen", "tv": "Sky Sport F1 / WOW; Rennen auch live bei RTL (Free-TV)", "source": "https://www.formel1.de/news/news/2026-11-09/ueberraschung-rtl-zeigt-zusaetzliches-formel-1-rennen-2026-im-free-tv"},
+    {"series": "f1", "from": "2026-12-04", "to": "2026-12-06", "tv": "Sky Sport F1 / WOW (komplettes Wochenende); Qualifying NITRO, Rennen RTL"}
+  ]
 }
