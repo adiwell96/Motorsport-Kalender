@@ -297,11 +297,17 @@ def apply_tv(events: list[Event], series: dict, overrides: list[dict]) -> None:
 
 
 def dedupe(events: list[Event]) -> list[Event]:
-    seen, out = set(), []
+    """Doppelte UIDs entfernen; bei Wochenenden derselben Serie mit gleichem
+    Startdatum gewinnt die zuerst geladene Quelle (Motorsport-Total)."""
+    seen, weekends, out = set(), set(), []
     for ev in events:
-        if ev.uid not in seen:
-            seen.add(ev.uid)
-            out.append(ev)
+        wk = (ev.series, ev.day()) if ev.kind == "weekend" else None
+        if ev.uid in seen or (wk and wk in weekends):
+            continue
+        seen.add(ev.uid)
+        if wk:
+            weekends.add(wk)
+        out.append(ev)
     return out
 
 

@@ -1,0 +1,14 @@
+{
+  "series": "pccd",
+  "source": "https://racing.porsche.com/de-DE/articles/carerra-cup-deutschland-2026-hockenheimring-vorschau",
+  "weekends": [
+    {"event": "Imola (mit FIA WEC) – Rennen 1+2", "location": "Imola, Italien", "from": "2027-04-09", "to": "2027-04-11"},
+    {"event": "Red Bull Ring (mit DTM) – Rennen 3+4", "location": "Spielberg, Österreich", "from": "2027-04-23", "to": "2027-04-25"},
+    {"event": "Norisring (mit DTM) – Rennen 5+6", "location": "Nürnberg, Deutschland", "from": "2027-07-02", "to": "2027-07-04"},
+    {"event": "Zandvoort (mit DTM) – Rennen 7+8", "location": "Zandvoort, Niederlande", "from": "2027-08-06", "to": "2027-08-08"},
+    {"event": "Nürburgring (mit DTM) – Rennen 9+10", "location": "Nürburgring, Deutschland", "from": "2027-08-20", "to": "2027-08-22"},
+    {"event": "Monza (mit GT Open) – Rennen 11+12", "location": "Monza, Italien", "from": "2027-09-17", "to": "2027-09-19"},
+    {"event": "Sachsenring (mit DTM) – Rennen 13+14", "location": "Hohenstein-Ernstthal, Deutschland", "from": "2027-09-24", "to": "2027-09-26"},
+    {"event": "Hockenheimring (mit DTM) – Rennen 15+16", "location": "Hockenheim, Deutschland", "from": "2027-10-08", "to": "2027-10-10", "note": "Saisonfinale"}
+  ]
+}
