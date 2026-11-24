@@ -3,8 +3,12 @@
   "event": "Abu Dhabi Desert Challenge",
   "location": "Al Ain / Madinat Zayed, VAE",
   "timezone": "Asia/Dubai",
-  "source": "https://www.worldrallyraidchampionship.com/en/news/2026/addc-the-suspense-is-building/892",
+  "source": "https://www.worldrallyraidchampionship.com/en/news/2026/addc-the-suspense-is-building/892 ; https://abudhabidesertchallenge.com/reigning-world-champion-moraes-wins-abu-dhabi-desert-challenge-opener/",
   "sessions": [
-    {"name": "Prolog (FIM, Motorräder, 7 km WP)", "start": "2026-11-22T11:00", "note": "Startzeiten der Etappen 1–5 (23.–27.11.) noch nicht veröffentlicht; Übertragung in Deutschland nicht bekannt"}
+    {
+      "name": "Prolog (FIM, Motorräder, 7 km WP)",
+      "start": "2026-11-22T11:00",
+      "note": "Startzeiten der Etappen 1–5 (23.–27.11.) nicht veröffentlicht. Etappen: 23.11. Al Ain–Madinat Zayed (227 km WP), 24.11. Madinat Zayed–Al Sila (Marathon, ~325 km WP), 25.11. Al Sila–Madinat Zayed, 26.11. Schleife Madinat Zayed, 27.11. Madinat Zayed–Al Ain. Medienpartner: Abu Dhabi Sports TV; Übertragung in Deutschland nicht bekannt"
+    }
   ]
 }
